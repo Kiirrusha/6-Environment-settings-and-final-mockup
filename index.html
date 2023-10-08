@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="main.css" />
@@ -35,10 +34,12 @@
 
     <main class="main">
       <h1 class="main__title">Услуги и сервисы</h1>
-      
+
       <ul class="main__services-list">
         <li class="services-list__item services-list__item_active">
-          <a class="services-list__link services-list__link_first" href="#">Ремонтируемые устройства</a>
+          <a class="services-list__link services-list__link_first" href="#"
+            >Ремонтируемые устройства</a
+          >
         </li>
         <li class="services-list__item">
           <a class="services-list__link" href="#">Дополнительные услуги</a>
@@ -56,15 +57,43 @@
           <a class="services-list__link" href="#">Адреса сервисных центров</a>
         </li>
         <li class="services-list__item">
-          <a class="services-list__link services-list__link_last" href="#">Отзывы</a>
+          <a class="services-list__link services-list__link_last" href="#"
+            >Отзывы</a
+          >
         </li>
       </ul>
 
-      <div>
-        <div></div>
-        <div></div>
+      <div class="main__content">
+        <div class="main__content__text">
+          <p class="content__text__paragraph-first">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <!-- <p class="content__text__paragraph-second">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p> -->
+          <div class="content__text__expand-text">
+            <img
+              class="expand__img"
+              src="/img/expand.svg"
+              alt="развернуть текст"
+            />
+            <h2 class="expand__title">Читать далее</h2>
+          </div>
+        </div>
+
+        <div class="main__content__img-block">
+          <img
+            class="main__content__img"
+            src="/img/_MG_3223.png"
+            alt="фоновое изображение"
+          />
+        </div>
       </div>
     </main>
-
   </body>
 </html>

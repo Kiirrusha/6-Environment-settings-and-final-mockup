@@ -92,3 +92,36 @@
     letter-spacing: -0.2px;
     
 }
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.content__text__paragraph-first {
+    margin-bottom: 16px;
+}
+.content__text__expand-text {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.expand__img {
+    width: 24px;
+    height: 24px;
+}
+
+.main__content__img-block {
+    margin-bottom: 24px;
+}
+
+.main__content__img {
+    min-width: 100%;
+    border-radius: 6px;
+}
+
