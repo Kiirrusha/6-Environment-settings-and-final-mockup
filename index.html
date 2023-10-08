@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="media.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -11,24 +12,61 @@
     <header class="header">
       <nav class="header__menu">
         <img class="header__menu__icon" src="/img/burger.svg" alt="menu" />
+        <div class="header__menu__divider divider"></div>
       </nav>
 
       <div class="header__logo">
         <img class="header__logo__icon" src="/img/Group.svg" alt="logo" />
-        <div class="header__logo__divider"></div>
+        <div class="header__logo__divider divider"></div>
       </div>
 
-      <ul class="header__service">
-        <img
-          class="header__sevice__icon-repair"
-          src="/img/repair.svg"
-          alt="repair"
-        />
-        <img
-          class="header__sevice__icon-checkstatus"
-          src="/img/checkstatus.svg"
-          alt="service"
-        />
+      <ul class="header__communications-list">
+        <li class="header__communications__item">
+          <a class="header__communications__link" href="#"
+            ><img
+              class="header__communications__icon-phone"
+              src="/img/call.svg"
+              alt="позвонить"
+          /></a>
+        </li>
+        <li class="header__communications__item">
+          <a class="header__communications__link" href="#"
+            ><img
+              class="header__communications__icon-phone"
+              src="/img/chat.svg"
+              alt="чат"
+          /></a>
+        </li>
+        <li class="header__communications__item">
+          <a class="header__communications__link" href="#"
+            ><img
+              class="header__communications__icon-phone"
+              src="/img/profile.svg"
+              alt="профиль"
+          /></a>
+        </li>
+        <li class="header__communications__item header__communications__item_last">
+          <div class="header__communications__divider divider"></div>
+        </li>
+      </ul>
+
+      <ul class="header__service-list">
+        <li class="header__service__item">
+          <a class="header__service__link" href="#"
+            ><img
+              class="header__service__icon-repair"
+              src="/img/repair.svg"
+              alt="Запись на ремонт"
+          /></a>
+        </li>
+        <li class="header__sevice__item">
+          <a class="header__service__link" href="#"
+            ><img
+              class="header__sevice__icon-checkstatus"
+              src="/img/checkstatus.svg"
+              alt="Проверить статус"
+          /></a>
+        </li>
       </ul>
     </header>
 
@@ -65,7 +103,7 @@
 
       <div class="main__content">
         <div class="main__content__text">
-          <p class="content__text__paragraph-first">
+          <p class="content__text__paragraph-first content__text">
             Мы являемся авторизованным сервисным центром по ремонту техники
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
             официальной гарантией производителя.

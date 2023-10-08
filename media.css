@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    .header {
+        padding: 24px;
+    }
+
+    .header__menu__divider {
+        display: block;
+    }
+
+    .header__logo__divider {
+        display: none;
+    }
+
+    .header__communications-list {
+        display: flex;
+        gap: 16px;
+    }
+    .header__communications__item {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__communications__item_last {
+        margin-right: 20px;
+    }
+
+}

@@ -11,8 +11,17 @@
 }
 
 
+
+
 .header__menu {
+   display: flex;
+   align-items: center;
+   gap: 20px;
    margin-right: 16px;
+}
+
+.header__menu__divider {
+    display: none;
 }
 
 .header__logo {
@@ -22,12 +31,25 @@
     margin-right: auto;
 }
 
-.header__logo__divider {
+.divider {
     width: 2px;
     height: 32px;
     flex-shrink: 0;
     border-radius: 1px;
     background: #EAEAEA;
+}
+
+
+
+
+.header__communications-list {
+    display: none;
+}
+
+
+.header__service-list {
+    display: flex;
+    gap: 16px;
 }
 
 .main {
@@ -97,9 +119,19 @@
     display: flex;
     flex-direction: column;
     
-    
-    
+ 
 }
+
+.content__text {
+    color: #1B1C21;
+    /* font-family: TT Lakes; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+    letter-spacing: 0.2px;
+}  
+
 .content__text__paragraph-first {
     margin-bottom: 16px;
 }
@@ -110,6 +142,9 @@
     gap: 8px;
     margin-bottom: 24px;
 }
+
+
+   
 
 .expand__img {
     width: 24px;
