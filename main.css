@@ -1,6 +1,12 @@
+html {
+    font-size: 16px;
+    font-style: normal;
+    font-family: TTLakes-Regular;
+    background: #F8F8F8;
+}
+
 .header {
     height: 88px;
-    min-width: 320px;
     background-color: #fff;
     padding: 24px 16px 24px 16px;
     margin: 0 auto 24px;
@@ -58,9 +64,8 @@
 
 .main__title {
     color: #1B1C21;
-    /* font-family: TT Lakes; */
+    font-family: TTLakes-Bold;
     font-size: 28px;
-    font-style: normal;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: -0.6px;
@@ -81,7 +86,13 @@
 }
 
 .main__services-list {
+
+    font-family: TTLakes-Medium;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.2px;
     display: flex;
+    justify-content: space-between;
     overflow: scroll;
     margin-bottom: 24px;
 }
@@ -106,47 +117,39 @@
 .services-list__link {
     white-space: nowrap;
     color: #7E7E82;
-    /* font-family: TT Lakes; */
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; 
-    letter-spacing: -0.2px;
+    
     
 }
 
 .main__content {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0;
+
     
  
 }
 
-.content__text {
+.main__content__text-block {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.main__content__text {
     color: #1B1C21;
-    /* font-family: TT Lakes; */
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 18px; 
     letter-spacing: 0.2px;
+    margin-bottom: 16px;
 }  
 
-.content__text__paragraph-first {
-    margin-bottom: 16px;
-}
-.content__text__expand-text {
+.main__content__expand-text {
     display: flex;
     margin-right: auto;
     align-items: center;
     gap: 8px;
     margin-bottom: 24px;
-}
-
-
-   
+}  
 
 .expand__img {
     width: 24px;
@@ -154,12 +157,19 @@
 }
 
 .main__content__img-block {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+
+.main__content__img-block {
+    width: 50%;
     margin-bottom: 24px;
 }
 
 .main__content__img {
     min-width: 100%;
+    max-width: 400px;
     border-radius: 6px;
-    /* overflow: hidden; */
 }
 
