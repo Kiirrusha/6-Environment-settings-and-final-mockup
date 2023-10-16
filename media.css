@@ -3,11 +3,11 @@
         padding: 24px;
     }
 
-    .header__menu__divider {
+    .menu__divider {
         display: block;
     }
 
-    .header__logo__divider {
+    .logo__divider {
         display: none;
     }
 
@@ -15,12 +15,12 @@
         display: flex;
         gap: 16px;
     }
-    .header__communications__item {
+    .communications-list__item {
         display: flex;
         align-items: center;
     }
     
-    .header__communications__item_last {
+    .communications-list__item-last {
         margin-right: 20px;
     }
 
