@@ -12,8 +12,79 @@
   <body>
     <header class="header">
       <nav class="header__menu">
-        <img class="menu__icon" src="./img/burger.svg" alt="menu" />
+        <input id="menu__moving" type="checkbox" hidden />
+        <label class="menu__label" for="menu__moving">
+          <img class="menu__icon" src="./img/burger.svg" alt="menu" />
+        </label>
         <div class="menu__divider divider"></div>
+
+        <div class="menu__sidebar">
+          <ul class="sidebar__menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Ремонт техники</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Продавцам техники</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Партнерам</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Производителям</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Наши сервесные центры</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="sidebar__communications-list">
+            <li class="sidebar__communications-item">
+              <a class="sidebar__communications-link" href="#"
+                ><img
+                  class="communications-list__icon-phone"
+                  src="./img/call.svg"
+                  alt="позвонить"
+              /></a>
+            </li>
+            <li class="sidebar__communications-item">
+              <a class="sidebar__communications-link" href="#"
+                ><img
+                  class="communications-list__icon-chat"
+                  src="./img/chat.svg"
+                  alt="чат"
+              /></a>
+            </li>
+            <li class="sidebar__communications-item">
+              <a class="sidebar__communications-link" href="#"
+                ><img
+                  class="communications-list__icon-profile"
+                  src="./img/profile.svg"
+                  alt="профиль"
+              /></a>
+            </li>
+          </ul>
+
+          <div class="sidebar__contacts">
+            <a class="contacts__mail" href="mailto:mail@cps.com"
+              >mail@cps.com</a
+            >
+            <a class="contacts__phone" href="tel:+88008908900"
+              >8 800 890 8900</a
+            >
+          </div>
+
+          <nav class="sidebar__langs">
+            <li class="langs__ru">RU</li>
+            <li class="langs__en">EN</li>
+            <li class="langs__ch">CH</li>
+          </nav>
+        </div>
       </nav>
 
       <div class="header__logo">
@@ -76,11 +147,9 @@
 
       <ul class="main__services-panel services-panel">
         <li class="services-panel__item services-panel__item-active">
-          <a class="services-panel__link" href="#"
-            >Ремонтируемые устройства</a
-          >
+          <a class="services-panel__link" href="#">Ремонтируемые устройства</a>
         </li>
-        <li class="services-panel__item ">
+        <li class="services-panel__item">
           <a class="services-panel__link" href="#">Дополнительные услуги</a>
         </li>
         <li class="services-panel__item">
@@ -96,9 +165,7 @@
           <a class="services-panel__link" href="#">Адреса сервисных центров</a>
         </li>
         <li class="services-panel__item">
-          <a class="services-panel__link" href="#"
-            >Отзывы</a
-          >
+          <a class="services-panel__link" href="#">Отзывы</a>
         </li>
       </ul>
 
