@@ -1,3 +1,3 @@
-# 3-Grids-and-BEM
+<h1>#4 Advanced styles</h1>
 
-https://kiirrusha.github.io/3-Grids-and-BEM/
+https://kiirrusha.github.io/4-Advanced-styles/
