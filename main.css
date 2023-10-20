@@ -46,15 +46,16 @@ html {
   flex-direction: column;
   justify-content: space-between;
 
-  top: 88px;
+  top: 0;
   width: 320px;
   left: -330px;
-  height: 100vh;
-  padding: 32px 24px;
+  height: 720px;
+  padding: 24px 24px 32px 24px;
 
   background-color: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   z-index: 1;
-
+  
   cursor: none;  
 
   transition-property: left;
@@ -66,14 +67,35 @@ html {
 #menu__moving:checked ~ .menu__sidebar {
     cursor: auto;  
     left: 0;
+  
+}
+
+.sidebar__icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: 57px;
+}
+
+.sidebar__icon-img:nth-child(2) {
+  width: 97px;
+  height: 51px;
+
+  margin-right: 78px;
 }
 
 
-
 .sidebar__menu-list {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  
 
   color: #1b1c21;
 
@@ -101,6 +123,24 @@ html {
 .menu-list__link:hover {
     transition-duration: 0.5s;
     color: #7E7E82;
+}
+
+.menu-list__link-active {
+  color: #7E7E82;
+}
+
+.menu-list__link-active::before {
+  content: url('./img/highlight.svg');
+  position: absolute;
+  left: -24px;
+  top: -5px;
+
+
+  /* width: 6px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: #41f6d7;
+  border-radius: 0 10px 10px 0; */
 }
 
 .sidebar__contacts {

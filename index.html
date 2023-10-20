@@ -19,9 +19,28 @@
         <div class="menu__divider divider"></div>
 
         <div class="menu__sidebar">
+          <div class="sidebar__icon">
+            <input id="menu__moving" type="checkbox" hidden />
+            <label class="menu__label" for="menu__moving">
+              <img
+                class="sidebar__icon-img"
+                src="./img/burger_exit.svg"
+                alt="menu_exit"
+              />
+            </label>
+            <img class="sidebar__icon-img" src="./img/group.svg" alt="logo" />
+            <img
+              class="sidebar__icon-img"
+              src="./img/search.svg"
+              alt="search"
+            />
+          </div>
+
           <ul class="sidebar__menu-list">
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Ремонт техники</a>
+              <a class="menu-list__link menu-list__link-active" href="#"
+                >Ремонт техники</a
+              >
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link" href="#">Корпоративным клиентам</a>
