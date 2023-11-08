@@ -6,6 +6,9 @@ html {
   overflow-y: scroll;
 }
 
+img {
+  vertical-align: middle;
+}
 /*-------------------------------------------------------
 --------------------------------------------------------- 
                             HEADER
@@ -53,21 +56,20 @@ html {
   padding: 24px 24px 32px 24px;
 
   background-color: #fff;
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   z-index: 1;
-  
-  cursor: none;  
+
+  cursor: none;
 
   transition-property: left;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
 
-
 #menu__moving:checked ~ .menu__sidebar {
-    cursor: auto;  
-    left: 0;
-  
+  cursor: auto;
+  left: 0;
 }
 
 .sidebar__icon {
@@ -88,14 +90,11 @@ html {
   margin-right: 78px;
 }
 
-
 .sidebar__menu-list {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 32px;
-
-  
 
   color: #1b1c21;
 
@@ -117,24 +116,23 @@ html {
 }
 
 .menu-list__link {
-    color: #1b1c21;
+  color: #1b1c21;
 }
 
 .menu-list__link:hover {
-    transition-duration: 0.5s;
-    color: #7E7E82;
+  transition-duration: 0.5s;
+  color: #7e7e82;
 }
 
 .menu-list__link-active {
-  color: #7E7E82;
+  color: #7e7e82;
 }
 
 .menu-list__link-active::before {
-  content: url('./img/highlight.svg');
+  content: url("../assets/img/highlight.svg");
   position: absolute;
   left: -24px;
   top: -5px;
-
 
   /* width: 6px;
   height: 40px;
@@ -359,3 +357,91 @@ html {
   border-radius: 6px;
 }
 
+/*----------------------------- 
+         main repair
+ ------------------------------*/
+
+.repair__title-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  /* width: 100vw; */
+  height: 56px;
+
+  padding-right: 16px;
+  margin-bottom: 16px;
+}
+
+.repair__title {
+  color: #7e7e82;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+}
+
+/*---------------------------------------
+         main repair__brands swiper
+ -----------------------------------------*/
+
+.repair__brands-swiper {
+  position: relative;
+  // display: flex;
+  // min-width: 260px;
+  // max-width: 330px; 
+  width: 330px;
+  height: 110px;
+  overflow: hidden;
+  margin: auto;
+  z-index: 0;
+}
+
+.repair__wrapper {
+  margin: 100;
+  padding: 0;
+}
+
+// .repair__slide {
+//   width: 240px  !important; 
+// }
+
+// .repair__slide img {
+//   width: 100%;
+  // width: 205px;
+  // height: auto;
+// }
+
+.repair__pagination {
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+
+  --swiper-pagination-color: #B5B6BC;
+  --swiper-pagination-bullet-inactive-color: #96969b;
+}
+
+/* .brands-swiper__wrapper {
+  display: flex;
+}
+
+.wrapper__slide-brands {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+
+  box-sizing: border-box;
+  width: 240px;
+  height: 72px;
+  padding: 20px 16px;
+  margin-right: 16px;
+}
+
+.name-brands__img {
+  max-width: 108px;
+} */

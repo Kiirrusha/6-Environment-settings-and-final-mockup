@@ -1,0 +1,1 @@
+console.log("Ryca_the_best_forever"),new Swiper(".swiper-container",{pagination:{el:".swiper-pagination",clickable:!0},slidesPerView:1.25,spaceBetween:16,centeredSlides:!1,loop:!0,autoplay:{delay:3e3,stopOnLastSlide:!1,disableOnInteraction:!1}});
