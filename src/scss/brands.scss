@@ -1,0 +1,45 @@
+.brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.brands-wrapper {
+  display: grid;
+  overflow: hidden;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 24px 16px;
+  width: 100%;
+
+  grid-template-columns: repeat(3, 1fr);
+  @media (min-width: 1020px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+
+.brands-slide {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.name-brands__img {
+  max-width: 108px;
+}
+
+.brands-button {
+  width: fit-content;
+  color: #1B1C21;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}

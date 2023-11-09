@@ -9,6 +9,7 @@ html {
 img {
   vertical-align: middle;
 }
+
 /*-------------------------------------------------------
 --------------------------------------------------------- 
                             HEADER
@@ -43,7 +44,7 @@ img {
 /*----------------------------- 
              menu__sidebar
  ------------------------------*/
- 
+
 .menu__sidebar {
   position: absolute;
   display: flex;
@@ -68,7 +69,7 @@ img {
   transition-timing-function: ease-in-out;
 }
 
-#menu__moving:checked ~ .menu__sidebar {
+#menu__moving:checked~.menu__sidebar {
   cursor: auto;
   left: 0;
 }
@@ -279,6 +280,7 @@ img {
 .services-panel__item {
   padding: 8px 16px 8px 16px;
 }
+
 .services-panel__item:last-child {
   padding-right: 0;
 }
@@ -361,9 +363,7 @@ img {
 /*----------------------------- 
          main repair
  ------------------------------*/
-.main__repair {
-
-}
+.main__repair {}
 
 
 .repair__title-block {
@@ -371,7 +371,6 @@ img {
   display: flex;
   align-items: center;
 
-  /* width: 100vw; */
   height: 56px;
 
   padding-right: 16px;
@@ -408,15 +407,15 @@ img {
   padding: 0;
 }
 
-// .repair__slide {
-//   width: 240px  !important; 
-// }
+.repair__slide {
+  width: 240px !important; //hack
+}
 
-// .repair__slide img {
-//   width: 100%;
-  // width: 205px;
-  // height: auto;
-// }
+.repair__slide img {
+  width: 100%;
+  width: 205px;
+  height: auto;
+}
 
 .repair__pagination {
   --swiper-pagination-bullet-width: 12px;
@@ -426,20 +425,6 @@ img {
   --swiper-pagination-bullet-inactive-color: #96969b;
 }
 
-// .repair__brands {
-//    display: block;
-// }
-
-// .brands-wrapper {
-//   // display: grid;
-//   // grid-template-columns: repeat(3, 224px);
-//   grid-template-rows: repeat(2, 72px);
-//   gap: 16px 24px;
-//   justify-content: space-between;
-//   width: 100vh;
-
-// }
-
-// .name-brands__img {
-//   max-width: 108px;
-// }
+.repair__brands {
+  display: block;
+}

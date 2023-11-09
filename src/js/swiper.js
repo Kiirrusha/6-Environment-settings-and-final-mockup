@@ -1,7 +1,5 @@
-// import Swiper from 'swiper';
-console.log("Ryca_the_best_forever")
-// Инициализируем свайпер
-new Swiper(".swiper-container", {
+
+export const swiper = new Swiper(".swiper-container", {
 
     // текущее положение 
     pagination: {
@@ -28,3 +26,5 @@ new Swiper(".swiper-container", {
         disableOnInteraction: false,
     }
 });  
+
+console.log("swiper work");
