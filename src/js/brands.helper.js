@@ -1,11 +1,12 @@
 import { mockBrands } from "./mock";
 
+
 const brandsWrapper = document.getElementById("brands-wrapper");
 const brandsButton = document.getElementById("brands-button");
 
-brandsButton.addEventListener("click", (e) => {});
 
-const mapper = (brand) => {
+
+const appender = (brand) => {
 	const li = document.createElement("li");
 	li.classList.add("brands-slide");
 
@@ -34,11 +35,58 @@ const mapper = (brand) => {
 	brandsWrapper.appendChild(li);
 };
 
-if (window.innerWidth >= 768 && window.innerWidth <= 1019) {
-	mockBrands.length = 6;
-}
-if (window.innerWidth >= 1019) {
-	mockBrands.length = 8;
+
+
+function getLength () {
+	if (window.innerWidth >= 768 && window.innerWidth <= 1119) {
+		return 6;
+	}
+	if (window.innerWidth >= 1120 ) {
+		return 8;
+	}
 }
 
-mockBrands.map(mapper);
+
+
+brandsButton.addEventListener("click", (e) => {
+	
+	brandsWrapper.innerHTML = "";	
+
+});
+
+brandsButton.addEventListener("click", (e) => {
+
+	brandsWrapper.dataset.visible = brandsWrapper.dataset.visible === "hidden" ? "full" : "hidden"; 
+	brandsButton.innerText = brandsWrapper.dataset.visible === "hidden" ? "Показать больше" : "Закрыть";
+
+	
+	let mockBrandsClone = [...mockBrands];
+	if (brandsWrapper.dataset.visible === "hidden") {
+		mockBrandsClone.length = getLength();
+	}
+
+	mockBrandsClone.forEach(appender);
+
+	// console.log(brandsWrapper.dataset.visible);
+	// console.log(mockBrands.length);
+	// console.log(mockBrands);
+});
+
+
+
+let mockBrandsClone = [...mockBrands];
+
+mockBrandsClone.length = getLength();
+
+mockBrandsClone.forEach(appender);
+
+
+
+// if (window.innerWidth >= 768 && window.innerWidth <= 1019) {
+// 	mockBrands.length = 6;
+// }
+// if (window.innerWidth >= 1019) {
+// 	mockBrands.length = 8;
+// }
+
+
