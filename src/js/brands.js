@@ -14,7 +14,7 @@ const appender = (brand) => {
 
 	const img = document.createElement("img");
 	img.classList.add("name-brands__img");
-	img.src = `../assets/brands/${brand}.svg`;
+	img.src = `./assets/brands/${brand}.svg`;
 	img.alt = brand;
 
 	const link = document.createElement("div");
@@ -60,7 +60,7 @@ brandsButton.addEventListener("click", (e) => {
 
 	brandsWrapper.dataset.visible = brandsWrapper.dataset.visible === "hidden" ? "full" : "hidden"; 
 	buttonText.textContent = brandsWrapper.dataset.visible === "hidden" ? "Показать все" : "Скрыть";
-	buttonImg.src = brandsWrapper.dataset.visible === "hidden" ? "../assets/svg/expand.svg" : "../assets/svg/expand2.svg";
+	buttonImg.src = brandsWrapper.dataset.visible === "hidden" ? "./assets/svg/expand.svg" : "./assets/svg/expand2.svg";
 
 	
 	let mockBrandsClone = [...mockBrands];
