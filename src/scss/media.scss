@@ -38,15 +38,30 @@
 
     }
 
+    .repair__brands {
+        display: flex;
+    }
+
+    .repair__brands-swiper {
+        display: none;
+    }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1020px) {
     .header {
         padding: 32px;
     }
 
     .main {
         padding: 0 32px;
+    }
+
+    .brands-wrapper {
+    grid-template-columns: repeat(4, 224px);
+    }
+
+    .brands-slide {
+        width: 240px;
     }
 
 }

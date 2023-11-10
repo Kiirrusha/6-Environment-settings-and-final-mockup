@@ -3,6 +3,8 @@ import { mockBrands } from "./mock";
 
 const brandsWrapper = document.getElementById("brands-wrapper");
 const brandsButton = document.getElementById("brands-button");
+const buttonImg = brandsButton.querySelector("img");
+const buttonText = brandsButton.lastChild;
 
 
 
@@ -57,7 +59,8 @@ brandsButton.addEventListener("click", (e) => {
 brandsButton.addEventListener("click", (e) => {
 
 	brandsWrapper.dataset.visible = brandsWrapper.dataset.visible === "hidden" ? "full" : "hidden"; 
-	brandsButton.innerText = brandsWrapper.dataset.visible === "hidden" ? "Показать больше" : "Закрыть";
+	buttonText.textContent = brandsWrapper.dataset.visible === "hidden" ? "Показать все" : "Скрыть";
+	buttonImg.src = brandsWrapper.dataset.visible === "hidden" ? "../assets/svg/expand.svg" : "../assets/svg/expand2.svg";
 
 	
 	let mockBrandsClone = [...mockBrands];

@@ -428,3 +428,63 @@ img {
 .repair__brands {
   display: block;
 }
+
+/*---------------------------------------
+         main repair__brands 
+ -----------------------------------------*/
+.repair__brands {
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+}
+
+
+.brands-wrapper {
+  display: grid;
+  overflow: hidden;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 24px 16px;
+  width: 100%;
+
+  grid-template-columns: repeat(3, 224px);
+
+  
+}
+
+.brands-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  gap: 10px;
+
+  width: 224px;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+
+  background: #FFF;
+
+  padding: 16px;
+}
+
+.name-brands__img {
+  max-width: 108px;
+}
+
+.brands-button {
+  width: fit-content;
+  color: #1B1C21;
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+
+
+  border: none;
+  background: none;
+}

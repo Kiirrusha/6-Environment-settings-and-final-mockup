@@ -1,224 +1,292 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</head>
+  <body>
+    <header class="header">
+      <nav class="header__menu">
+        <input id="menu__moving" type="checkbox" hidden />
+        <label class="menu__label" for="menu__moving">
+          <img class="menu__icon" src="./assets/img/burger.svg" alt="menu" />
+        </label>
+        <div class="menu__divider divider"></div>
 
-<body>
-  <header class="header">
-    <nav class="header__menu">
-      <input id="menu__moving" type="checkbox" hidden />
-      <label class="menu__label" for="menu__moving">
-        <img class="menu__icon" src="./assets/img/burger.svg" alt="menu" />
-      </label>
-      <div class="menu__divider divider"></div>
+        <div class="menu__sidebar">
+          <div class="sidebar__icon">
+            <input id="menu__moving" class="test" type="checkbox" hidden />
+            <label class="menu__label" for="menu__moving">
+              <img
+                class="sidebar__icon-img"
+                src="./assets/img/burger_exit.svg"
+                alt="menu_exit"
+              />
+            </label>
+            <img
+              class="sidebar__img-group"
+              src="./assets/img/group.svg"
+              alt="logo"
+            />
+            <img
+              class="sidebar__icon-img"
+              src="./assets/img/search.svg"
+              alt="search"
+            />
+          </div>
 
-      <div class="menu__sidebar">
-        <div class="sidebar__icon">
-          <input id="menu__moving" class="test" type="checkbox" hidden />
-          <label class="menu__label" for="menu__moving">
-            <img class="sidebar__icon-img" src="./assets/img/burger_exit.svg" alt="menu_exit" />
-          </label>
-          <img class="sidebar__img-group" src="./assets/img/group.svg" alt="logo" />
-          <img class="sidebar__icon-img" src="./assets/img/search.svg" alt="search" />
+          <ul class="sidebar__menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link menu-list__link-active" href="#"
+                >Ремонт техники</a
+              >
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Продавцам техники</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Партнерам</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Производителям</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Наши сервесные центры</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="sidebar__communications-list">
+            <li class="sidebar__communications-item">
+              <a class="sidebar__communications-link" href="#"
+                ><img
+                  class="communications-list__icon-phone"
+                  src="./assets/img/call.svg"
+                  alt="позвонить"
+              /></a>
+            </li>
+            <li class="sidebar__communications-item">
+              <a class="sidebar__communications-link" href="#"
+                ><img
+                  class="communications-list__icon-chat"
+                  src="./assets/img/chat.svg"
+                  alt="чат"
+              /></a>
+            </li>
+            <li class="sidebar__communications-item">
+              <a class="sidebar__communications-link" href="#"
+                ><img
+                  class="communications-list__icon-profile"
+                  src="./assets/img/profile.svg"
+                  alt="профиль"
+              /></a>
+            </li>
+          </ul>
+
+          <div class="sidebar__contacts">
+            <a class="contacts__mail" href="mailto:mail@cps.com"
+              >mail@cps.com</a
+            >
+            <a class="contacts__phone" href="tel:+88008908900"
+              >8 800 890 8900</a
+            >
+          </div>
+
+          <nav class="sidebar__langs">
+            <li class="langs__ru">RU</li>
+            <li class="langs__en">EN</li>
+            <li class="langs__ch">CH</li>
+          </nav>
+        </div>
+      </nav>
+
+      <div class="header__logo">
+        <img class="logo__icon" src="./assets/img/group.svg" alt="logo" />
+        <div class="logo__divider divider"></div>
+      </div>
+
+      <ul class="header__communications-list">
+        <li class="communications-list__item">
+          <a class="communications-list__link" href="#"
+            ><img
+              class="communications-list__icon-phone"
+              src="./assets/img/call.svg"
+              alt="позвонить"
+          /></a>
+        </li>
+        <li class="communications-list__item">
+          <a class="communications-list__link" href="#"
+            ><img
+              class="communications-list__icon-chat"
+              src="./assets/img/chat.svg"
+              alt="чат"
+          /></a>
+        </li>
+        <li class="ommunications-list__item">
+          <a class="communications-list__link" href="#"
+            ><img
+              class="communications-list__icon-profile"
+              src="./assets/img/profile.svg"
+              alt="профиль"
+          /></a>
+        </li>
+        <li class="communications-list__item communications-list__item-last">
+          <div class="communications-list__divider divider"></div>
+        </li>
+      </ul>
+
+      <ul class="header__service-list">
+        <li class="header__service-list-item">
+          <a class="header__service-list-link" href="#"
+            ><img
+              class="header__service-list-icon-repair"
+              src="./assets/img/repair.svg"
+              alt="Запись на ремонт"
+          /></a>
+        </li>
+        <li class="header__service-list-item">
+          <a class="header__service-list-link" href="#"
+            ><img
+              class="header__service-list-icon-checkstatus"
+              src="./assets/img/checkstatus.svg"
+              alt="Проверить статус"
+          /></a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="main">
+      <h1 class="main__title">Услуги и сервисы</h1>
+
+      <ul class="main__services-panel services-panel">
+        <li class="services-panel__item services-panel__item-active">
+          <a class="services-panel__link" href="#">Ремонтируемые устройства</a>
+        </li>
+        <li class="services-panel__item">
+          <a class="services-panel__link" href="#">Дополнительные услуги</a>
+        </li>
+        <li class="services-panel__item">
+          <a class="services-panel__link" href="#">Цены на услуги</a>
+        </li>
+        <li class="services-panel__item">
+          <a class="services-panel__link" href="#">Специальные цены</a>
+        </li>
+        <li class="services-panel__item">
+          <a class="services-panel__link" href="#">Ремонтируемые бренды</a>
+        </li>
+        <li class="services-panel__item">
+          <a class="services-panel__link" href="#">Адреса сервисных центров</a>
+        </li>
+        <li class="services-panel__item">
+          <a class="services-panel__link" href="#">Отзывы</a>
+        </li>
+      </ul>
+
+      <div class="main__content">
+        <div class="main__content-text-block">
+          <p class="main__content-text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <p class="main__content-text">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
+          <div class="main__content-expand-text">
+            <img
+              class="main__content-expand-img"
+              src="./assets/img/expand.svg"
+              alt="развернуть текст"
+            />
+            <h2 class="main__content-expand-title">Читать далее</h2>
+          </div>
         </div>
 
-        <ul class="sidebar__menu-list">
-          <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link-active" href="#">Ремонт техники</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Корпоративным клиентам</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Продавцам техники</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Партнерам</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Производителям</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Наши сервесные центры</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Контакты</a>
-          </li>
-        </ul>
-
-        <ul class="sidebar__communications-list">
-          <li class="sidebar__communications-item">
-            <a class="sidebar__communications-link" href="#"><img class="communications-list__icon-phone"
-                src="./assets/img/call.svg" alt="позвонить" /></a>
-          </li>
-          <li class="sidebar__communications-item">
-            <a class="sidebar__communications-link" href="#"><img class="communications-list__icon-chat"
-                src="./assets/img/chat.svg" alt="чат" /></a>
-          </li>
-          <li class="sidebar__communications-item">
-            <a class="sidebar__communications-link" href="#"><img class="communications-list__icon-profile"
-                src="./assets/img/profile.svg" alt="профиль" /></a>
-          </li>
-        </ul>
-
-        <div class="sidebar__contacts">
-          <a class="contacts__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-          <a class="contacts__phone" href="tel:+88008908900">8 800 890 8900</a>
-        </div>
-
-        <nav class="sidebar__langs">
-          <li class="langs__ru">RU</li>
-          <li class="langs__en">EN</li>
-          <li class="langs__ch">CH</li>
-        </nav>
-      </div>
-    </nav>
-
-    <div class="header__logo">
-      <img class="logo__icon" src="./assets/img/group.svg" alt="logo" />
-      <div class="logo__divider divider"></div>
-    </div>
-
-    <ul class="header__communications-list">
-      <li class="communications-list__item">
-        <a class="communications-list__link" href="#"><img class="communications-list__icon-phone"
-            src="./assets/img/call.svg" alt="позвонить" /></a>
-      </li>
-      <li class="communications-list__item">
-        <a class="communications-list__link" href="#"><img class="communications-list__icon-chat"
-            src="./assets/img/chat.svg" alt="чат" /></a>
-      </li>
-      <li class="ommunications-list__item">
-        <a class="communications-list__link" href="#"><img class="communications-list__icon-profile"
-            src="./assets/img/profile.svg" alt="профиль" /></a>
-      </li>
-      <li class="communications-list__item communications-list__item-last">
-        <div class="communications-list__divider divider"></div>
-      </li>
-    </ul>
-
-    <ul class="header__service-list">
-      <li class="header__service-list-item">
-        <a class="header__service-list-link" href="#"><img class="header__service-list-icon-repair"
-            src="./assets/img/repair.svg" alt="Запись на ремонт" /></a>
-      </li>
-      <li class="header__service-list-item">
-        <a class="header__service-list-link" href="#"><img class="header__service-list-icon-checkstatus"
-            src="./assets/img/checkstatus.svg" alt="Проверить статус" /></a>
-      </li>
-    </ul>
-  </header>
-
-  <main class="main">
-    <h1 class="main__title">Услуги и сервисы</h1>
-
-    <ul class="main__services-panel services-panel">
-      <li class="services-panel__item services-panel__item-active">
-        <a class="services-panel__link" href="#">Ремонтируемые устройства</a>
-      </li>
-      <li class="services-panel__item">
-        <a class="services-panel__link" href="#">Дополнительные услуги</a>
-      </li>
-      <li class="services-panel__item">
-        <a class="services-panel__link" href="#">Цены на услуги</a>
-      </li>
-      <li class="services-panel__item">
-        <a class="services-panel__link" href="#">Специальные цены</a>
-      </li>
-      <li class="services-panel__item">
-        <a class="services-panel__link" href="#">Ремонтируемые бренды</a>
-      </li>
-      <li class="services-panel__item">
-        <a class="services-panel__link" href="#">Адреса сервисных центров</a>
-      </li>
-      <li class="services-panel__item">
-        <a class="services-panel__link" href="#">Отзывы</a>
-      </li>
-    </ul>
-
-    <div class="main__content">
-      <div class="main__content-text-block">
-        <p class="main__content-text">
-          Мы являемся авторизованным сервисным центром по ремонту техники
-          Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-          официальной гарантией производителя.
-        </p>
-        <p class="main__content-text">
-          Мы успешно работаем с 1992 года и заслужили репутацию надежного
-          партнера, что подтверждает большое количество постоянных клиентов.
-          Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-          очередь, советуют нас родным и близким.
-        </p>
-        <div class="main__content-expand-text">
-          <img class="main__content-expand-img" src="./assets/img/expand.svg" alt="развернуть текст" />
-          <h2 class="main__content-expand-title">Читать далее</h2>
+        <div class="main__content-img-block">
+          <img
+            class="main__content-img"
+            src="./assets/img/mg.png"
+            alt="фоновое изображение"
+          />
         </div>
       </div>
 
-      <div class="main__content-img-block">
-        <img class="main__content-img" src="./assets/img/mg.png" alt="фоновое изображение" />
+      <div class="main__repair repair">
+        <div class="repair__title-block">
+          <h2 class="repair__title">Ремонт техники различных брендов</h2>
+        </div>
+
+        <div class="repair__brands-swiper swiper-container">
+          <ul class="repair__wrapper swiper-wrapper">
+            <li class="repair__slide swiper-slide">
+              <img src="../src/assets/brands_swaper/lenovo.png" alt="Lenovo" />
+            </li>
+
+            <li class="repair__slide swiper-slide">
+              <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
+            </li>
+
+            <li class="repair__slide swiper-slide">
+              <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
+            </li>
+
+            <li class="repair__slide swiper-slide">
+              <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
+            </li>
+
+            <li class="repair__slide swiper-slide">
+              <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
+            </li>
+
+            <li class="repair__slide swiper-slide">
+              <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
+            </li>
+
+            <li class="repair__slide swiper-slide">
+              <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
+            </li>
+
+            <li class="repair__slide swiper-slide">
+              <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
+            </li>
+
+            <li class="repair__slide swiper-slide">
+              <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
+            </li>
+          </ul>
+
+          <div class="repair__pagination swiper-pagination"></div>
+        </div>
+        <!-- Рендер с помощью JS -->
+        <div class="repair__brands brands">
+          <ul
+            id="brands-wrapper"
+            class="brands-wrapper wrapper"
+            data-visible="hidden"
+          ></ul>
+          <button id="brands-button" class="brands-button">
+            <img src="./assets/svg/expand.svg"/>
+            Показать всё
+          </button>
+        </div>
       </div>
-    </div>
-
-    <div class="main__repair repair">
-      <div class="repair__title-block">
-        <h2 class="repair__title">Ремонт техники различных брендов</h2>
-      </div>
-
-      <div class="repair__brands-swiper swiper-container">
-        <ul class="repair__wrapper swiper-wrapper">
-          <li class="repair__slide swiper-slide">
-            <img src="../src/assets/brands_swaper/lenovo.png" alt="Lenovo" />
-          </li>
-
-          <li class="repair__slide swiper-slide">
-            <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
-          </li>
-
-          <li class="repair__slide swiper-slide">
-            <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
-          </li>
-
-          <li class="repair__slide swiper-slide">
-            <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
-          </li>
-
-          <li class="repair__slide swiper-slide">
-            <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
-          </li>
-
-          <li class="repair__slide swiper-slide">
-            <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
-          </li>
-
-          <li class="repair__slide swiper-slide">
-            <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
-          </li>
-
-          <li class="repair__slide swiper-slide">
-            <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
-          </li>
-
-          <li class="repair__slide swiper-slide">
-            <img src="./assets/brands_swaper/lenovo.png" alt="Lenovo" />
-          </li>
-        </ul>
-
-        <div class="repair__pagination swiper-pagination"></div>
-      </div>
-
-      <div class="repair__brands brands">
-        <ul id="brands-wrapper" class="brands-wrapper wrapper" data-visible="hidden"></ul> <!-- Рендер с помощью JS -->
-        <button id="brands-button" class="brands-button"> Показать больше </button>
-      </div>
-    </div>
-  </main>
-
-</body>
-
+    </main>
+  </body>
 </html>
