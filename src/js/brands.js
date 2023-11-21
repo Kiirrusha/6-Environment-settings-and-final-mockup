@@ -6,7 +6,14 @@ const brandsButton = document.getElementById("brands-button");
 const buttonImg = brandsButton.querySelector("img");
 const buttonText = brandsButton.lastChild;
 
-
+function getLength () {
+	if (window.innerWidth >= 768 && window.innerWidth <= 1119) {
+		return 6;
+	}
+	if (window.innerWidth >= 1120 ) {
+		return 8;
+	}
+}
 
 const appender = (brand) => {
 	const li = document.createElement("li");
@@ -34,29 +41,26 @@ const appender = (brand) => {
 	li.appendChild(img);
 	li.appendChild(link);
 
-	brandsWrapper.appendChild(li);
+	brandsWrapper.append(li);
 };
 
+function test() {
+	if (brandsWrapper.dataset.visible === "hidden"){
+	brandsWrapper.innerHTML = "";
 
+		if (window.innerWidth >= 768) {
+			let mockBrandsClone = [...mockBrands];
 
-function getLength () {
-	if (window.innerWidth >= 768 && window.innerWidth <= 1119) {
-		return 6;
-	}
-	if (window.innerWidth >= 1120 ) {
-		return 8;
-	}
+			mockBrandsClone.length = getLength();	
+			mockBrandsClone.forEach(appender);
+		}
+}
+	
+
 }
 
-
-
 brandsButton.addEventListener("click", (e) => {
-	
-	brandsWrapper.innerHTML = "";	
-
-});
-
-brandsButton.addEventListener("click", (e) => {
+	brandsWrapper.innerHTML = "";
 
 	brandsWrapper.dataset.visible = brandsWrapper.dataset.visible === "hidden" ? "full" : "hidden"; 
 	buttonText.textContent = brandsWrapper.dataset.visible === "hidden" ? "Показать все" : "Скрыть";
@@ -76,6 +80,7 @@ brandsButton.addEventListener("click", (e) => {
 });
 
 
+window.onresize = test;
 
 let mockBrandsClone = [...mockBrands];
 
@@ -85,11 +90,5 @@ mockBrandsClone.forEach(appender);
 
 
 
-// if (window.innerWidth >= 768 && window.innerWidth <= 1019) {
-// 	mockBrands.length = 6;
-// }
-// if (window.innerWidth >= 1019) {
-// 	mockBrands.length = 8;
-// }
 
 

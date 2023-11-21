@@ -1,3 +1,6 @@
+@import "";
+
+
 html {
   font-size: 16px;
   font-style: normal;
@@ -361,12 +364,12 @@ img {
 }
 
 /*----------------------------- 
-         main repair
+         main brands
  ------------------------------*/
-.main__repair {}
+.main__brands {}
 
 
-.repair__title-block {
+.brands__title-block {
   position: relative;
   display: flex;
   align-items: center;
@@ -377,7 +380,7 @@ img {
   margin-bottom: 16px;
 }
 
-.repair__title {
+.brands__title {
   color: #7e7e82;
   font-size: 16px;
   font-weight: 400;
@@ -387,10 +390,10 @@ img {
 }
 
 /*---------------------------------------
-         main repair__brands swiper
+          brands-swiper
  -----------------------------------------*/
 
-.repair__brands-swiper {
+.brands-swiper {
   position: relative;
   // display: flex;
   // min-width: 260px;
@@ -402,22 +405,14 @@ img {
   z-index: 0;
 }
 
-.repair__wrapper {
+
+
+.brands__wrapper {
   margin: 100;
   padding: 0;
 }
 
-// .repair__slide {
-//   width: 240px !important; //hack
-// }
-
-// .repair__slide img {
-//   width: 100%;
-//   width: 205px;
-//   height: auto;
-// }
-
-.repair__pagination {
+.pagination {
   --swiper-pagination-bullet-width: 12px;
   --swiper-pagination-bullet-height: 12px;
 
@@ -428,11 +423,40 @@ img {
 .repair__brands {
   display: block;
 }
+/*----------------------------- 
+         main devices
+ ------------------------------*/
+
+ .devices__title-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  height: 56px;
+
+  padding-right: 16px;
+  margin-bottom: 16px;
+}
+
+.devices__title {
+  color: #7e7e82;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
 
 /*---------------------------------------
-         main repair__brands 
+         brands__list
  -----------------------------------------*/
-.repair__brands {
+.brands__list {
   display: none;
   flex-direction: column;
   align-items: start;
@@ -488,3 +512,17 @@ img {
   border: none;
   background: none;
 }
+
+/*---------------------------------------
+          devices-swiper
+ -----------------------------------------*/
+ .devices-swiper {
+  position: relative;
+  width: 330px;
+  height: 198px;
+  overflow: hidden;
+  margin: auto;
+  z-index: 0;
+}
+
+

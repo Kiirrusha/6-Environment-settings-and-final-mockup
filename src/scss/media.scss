@@ -38,11 +38,15 @@
 
     }
 
-    .repair__brands {
+    .brands__list {
         display: flex;
     }
 
-    .repair__brands-swiper {
+    .brands-swiper {
+        display: none;
+    }
+
+    .devices-swiper {
         display: none;
     }
 }

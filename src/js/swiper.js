@@ -17,14 +17,14 @@ export const swiper = new Swiper(".swiper-container", {
     //  бесконечная прокрутка
     loop: true,
     // автопрокрутка
-    autoplay: {
-        // скорость
-        delay: 3000,
-        // не стопать на ласт слайде
-        stopOnLastSlide: false,
-        // не отключать автопрокрутку после взаимодействия с ней
-        disableOnInteraction: false,
-    }
+    // autoplay: {
+    //     // скорость
+    //     delay: 3000,
+    //     // не стопать на ласт слайде
+    //     stopOnLastSlide: false,
+    //     // не отключать автопрокрутку после взаимодействия с ней
+    //     disableOnInteraction: false,
+    // }
 });  
 
 console.log("swiper work");
