@@ -1,0 +1,19 @@
+.header__communications-list {
+    display: none;
+
+      @media (min-width: 768px) {
+            display: flex;
+            gap: 16px;
+      }
+  }
+
+  @media (min-width: 768px) {
+    .communications-list__item {
+        display: flex;
+        align-items: center;
+    }
+
+    .communications-list__item-last {
+      margin-right: 20px;
+    }
+  }

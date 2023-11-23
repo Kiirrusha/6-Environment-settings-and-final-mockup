@@ -1,0 +1,15 @@
+.main__content-img-block {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  
+  .main__content__img-block {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+  
+  .main__content-img {
+    min-width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
+  }

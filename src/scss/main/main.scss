@@ -1,0 +1,28 @@
+@import "section/services/title.scss";
+@import "section/services/services-panel.scss";
+@import "section/services/content-text.scss";
+@import "section/services/content-img.scss";
+
+@import "section/brands/title.scss";
+@import "section/brands/swiper.scss";
+@import "section/brands/list.scss";
+
+@import "section/devices/title.scss";
+@import "section/devices/swiper.scss";
+@import "section/devices/list.scss";
+
+
+
+
+
+.main {
+    padding: 0 16px;
+
+    @media (min-width: 768px) {
+          padding: 0 24px;
+    }
+
+    @media (min-width: 1020px) {
+          padding: 0 32px;
+    }
+  }

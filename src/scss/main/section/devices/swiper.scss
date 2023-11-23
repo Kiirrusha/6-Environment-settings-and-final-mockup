@@ -1,0 +1,12 @@
+.devices-swiper {
+    position: relative;
+    width: 330px;
+    height: 198px;
+    overflow: hidden;
+    margin: auto;
+    z-index: 0;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+  }

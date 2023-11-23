@@ -1,0 +1,146 @@
+.menu__sidebar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  top: 0;
+  width: 320px;
+  left: -330px;
+  height: 720px;
+  padding: 24px 24px 32px 24px;
+
+  background-color: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  z-index: 1;
+
+  cursor: none;
+
+  transition-property: left;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+#menu__moving:checked~.menu__sidebar {
+  cursor: auto;
+  left: 0;
+}
+
+.sidebar__icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: 57px;
+}
+
+.sidebar__img-group {
+  width: 97px;
+  height: 51px;
+
+  margin-right: 78px;
+}
+
+.sidebar__menu-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  color: #1b1c21;
+
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-wrap: nowrap;
+
+  padding-bottom: 40px;
+}
+
+.sidebar__communications-list {
+  display: flex;
+  gap: 16px;
+
+  padding-bottom: 16px;
+}
+
+.menu-list__link {
+  color: #1b1c21;
+}
+
+.menu-list__link:hover {
+  transition-duration: 0.5s;
+  color: #7e7e82;
+}
+
+.menu-list__link-active {
+  color: #7e7e82;
+}
+
+.menu-list__link-active::before {
+  content: url("../assets/img/highlight.svg");
+  position: absolute;
+  left: -24px;
+  top: -5px;
+
+  /* width: 6px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: #41f6d7;
+  border-radius: 0 10px 10px 0; */
+}
+
+.sidebar__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  padding-bottom: 40px;
+}
+
+.contacts__mail {
+  color: #1b1c21;
+
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.contacts__phone {
+  color: #1b1c21;
+
+  font-family: TTLakes-Bold;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+
+.sidebar__langs {
+  display: flex;
+  gap: 7px;
+
+  color: #1b1c21;
+
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.menu__divider {
+  display: none;
+
+    @media (min-width: 768px) {
+          display: block;
+    }
+}

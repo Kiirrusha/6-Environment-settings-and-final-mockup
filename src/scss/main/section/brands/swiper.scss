@@ -1,0 +1,32 @@
+.brands-swiper {
+    position: relative;
+    // display: flex;
+    // min-width: 260px;
+    // max-width: 330px; 
+    width: 330px;
+    height: 110px;
+    overflow: hidden;
+    margin: auto;
+    z-index: 0;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+  }
+  
+  .brands__wrapper {
+    margin: 100;
+    padding: 0;
+  }
+  
+  .pagination {
+    --swiper-pagination-bullet-width: 12px;
+    --swiper-pagination-bullet-height: 12px;
+  
+    --swiper-pagination-color: #B5B6BC;
+    --swiper-pagination-bullet-inactive-color: #96969b;
+  }
+  
+  // .repair__brands {
+  //   display: block;
+  // }

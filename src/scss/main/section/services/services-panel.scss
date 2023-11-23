@@ -1,0 +1,33 @@
+.main__services-panel {
+    font-family: TTLakes-Medium;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    margin-bottom: 24px;
+  }
+  
+  .main__services-panel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .services-panel__item {
+    padding: 8px 16px 8px 16px;
+  }
+  
+  .services-panel__item:last-child {
+    padding-right: 0;
+  }
+  
+  .services-panel__item-active {
+    border-radius: 6px;
+    border: 2px solid #b8ffec;
+    background: #fff;
+  }
+  
+  .services-panel__link {
+    white-space: nowrap;
+    color: #7e7e82;
+  }

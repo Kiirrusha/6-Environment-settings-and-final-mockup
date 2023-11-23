@@ -1,0 +1,20 @@
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: auto;
+  }
+  
+  .divider {
+    width: 2px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    background: #eaeaea;
+  }
+
+  @media (min-width: 768px) {
+    .logo__divider {
+        display: none;
+    }
+  }

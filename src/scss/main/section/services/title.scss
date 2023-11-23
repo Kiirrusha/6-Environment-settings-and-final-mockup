@@ -1,0 +1,20 @@
+.main__title {
+    color: #1b1c21;
+    font-family: TTLakes-Bold;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    margin-bottom: 24px;
+  }
+  
+  .main__title::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 6px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: #41f6d7;
+    border-radius: 0 10px 10px 0;
+  }
