@@ -19,19 +19,15 @@ const appender = (brand) => {
 	const li = document.createElement("li");
 	li.classList.add("devices-slide");
 
-	// const img = document.createElement("img");
-	// img.classList.add("name-devices__img");
-	// img.src = `./assets/devices/${brand}.png`;
-	// img.alt = brand;
-
     const img = document.createElement("p");
 	img.classList.add("name-devices__img");
 	img.textContent = `${brand}`;
 
-	const link = document.createElement("div");
-	link.classList.add("name-devices__link");
+	const div = document.createElement("div");
+	div.classList.add("name-devices__container")
 
 	const a = document.createElement("a");
+	a.classList.add("name-devices__link");
 	a.href = "#";
 
 	const imgLink = document.createElement("img");
@@ -41,10 +37,12 @@ const appender = (brand) => {
 
 	a.appendChild(imgLink);
 
-	link.appendChild(a);
+	div.appendChild(img);
+	div.appendChild(a);
+	
 
-	li.appendChild(img);
-	li.appendChild(link);
+	li.appendChild(div);
+	
 
 	brandsWrapper.append(li);
 };
@@ -85,7 +83,7 @@ brandsButton.addEventListener("click", (e) => {
 });
 
 
-window.onresize = test_1;
+window.addEventListener("resize", test_1);
 
 let mockBrandsClone = [...mockDevices];
 

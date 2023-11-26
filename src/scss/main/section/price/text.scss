@@ -1,0 +1,30 @@
+.price__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+}
+
+.text__content {
+    max-width: 430px;
+
+    color: #1B1C21;
+
+    font-family: "TTLakes-Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+}
+
+.text__link {
+    color: #1B1C21;
+
+    font-family: "TTLakes-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+}

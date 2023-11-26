@@ -170,9 +170,9 @@
     </header>
 
     <main class="main">
-      <h1 class="main__title">Услуги и сервисы</h1>
+      <h1 class="main__title container">Услуги и сервисы</h1>
 
-      <ul class="main__services-panel services-panel">
+      <ul class="main__services-panel services-panel container">
         <li class="services-panel__item services-panel__item-active">
           <a class="services-panel__link" href="#">Ремонтируемые устройства</a>
         </li>
@@ -196,7 +196,7 @@
         </li>
       </ul>
 
-      <div class="main__content">
+      <div class="main__content container">
         <div class="main__content-text-block">
           <p class="main__content-text">
             Мы являемся авторизованным сервисным центром по ремонту техники
@@ -230,71 +230,84 @@
 
       <div class="main__brands brands">
         <div class="brands__title-block">
-          <h2 class="brands__title">Ремонт техники различных брендов</h2>
+          <h2 class="brands__title container">
+            Ремонт техники различных брендов
+          </h2>
         </div>
 
-        <div class="brands-swiper swiper-container">
-          <ul class="brands__wrapper swiper-wrapper">
-            <li class="brands__slide swiper-slide">
-              <img src="../src/assets/brands_swaper/lenovo.png" alt="Lenovo" />
-            </li>
+        <div class="container">
+          <div class="brands-swiper swiper-container">
+            <ul class="brands__wrapper swiper-wrapper">
+              <li class="brands__slide swiper-slide">
+                <img
+                  src="../src/assets/brands_swaper/lenovo.png"
+                  alt="Lenovo"
+                />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/sumsung.png" alt="Sumsung" />
-            </li>
+              <li class="brands__slide swiper-slide">
+                <img src="./assets/brands_swaper/sumsung.png" alt="Sumsung" />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/msi.png" alt="MSI" />
-            </li>
+              <li class="brands__slide swiper-slide">
+                <img src="./assets/brands_swaper/msi.png" alt="MSI" />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/viewsonic.png" alt="ViewSonic" />
-            </li>
+              <li class="brands__slide swiper-slide">
+                <img
+                  src="./assets/brands_swaper/viewsonic.png"
+                  alt="ViewSonic"
+                />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/hp.png" alt="Hp" />
-            </li>
+              <li class="brands__slide swiper-slide">
+                <img src="./assets/brands_swaper/hp.png" alt="Hp" />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/bosch.png" alt="BOSCH" />
-            </li>
+              <li class="brands__slide swiper-slide">
+                <img src="./assets/brands_swaper/bosch.png" alt="BOSCH" />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/acer.png" alt="acer" />
-            </li>
+              <li class="brands__slide swiper-slide">
+                <img src="./assets/brands_swaper/acer.png" alt="acer" />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/sony.png" alt="Sony" />
-            </li>
+              <li class="brands__slide swiper-slide">
+                <img src="./assets/brands_swaper/sony.png" alt="Sony" />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/panasonic.png" alt="Panasonic" />
-            </li>
+              <li class="brands__slide swiper-slide">
+                <img
+                  src="./assets/brands_swaper/panasonic.png"
+                  alt="Panasonic"
+                />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/honor.png" alt="Honor" />
-            </li>
+              <li class="brands__slide swiper-slide">
+                <img src="./assets/brands_swaper/honor.png" alt="Honor" />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/asus.png" alt="Asus" />
-            </li>
+              <li class="brands__slide swiper-slide">
+                <img src="./assets/brands_swaper/asus.png" alt="Asus" />
+              </li>
 
-            <li class="brands__slide swiper-slide">
-              <img src="./assets/brands_swaper/dell.png" alt="Dell" />
-            </li>
-          </ul>
+              <li class="brands__slide swiper-slide">
+                <img src="./assets/brands_swaper/dell.png" alt="Dell" />
+              </li>
+            </ul>
 
-          <div class="pagination swiper-pagination"></div>
+            <div class="pagination swiper-pagination"></div>
+          </div>
         </div>
         <!-- Рендер с помощью JS -->
-        <div class="brands__list">
+        <div class="brands__list container">
           <ul
             id="brands-wrapper"
             class="brands-wrapper wrapper"
             data-visible="hidden"
           ></ul>
           <button id="brands-button" class="brands-button">
-            <img src="./assets/svg/expand.svg"/>
+            <img src="./assets/svg/expand.svg" />
             Показать всё
           </button>
         </div>
@@ -302,45 +315,282 @@
 
       <div class="main__devices devices">
         <div class="devices__title-block">
-          <h2 class="devices__title">Ремонт различных видов техники</h2>
+          <h2 class="devices__title container container">
+            Ремонт различных видов техники
+          </h2>
         </div>
 
-        <div class="devices-swiper swiper-container">
-          <ul class="devices__wrapper swiper-wrapper">
-            <li class="devices__slide swiper-slide">
-              <img src="../src/assets/brands_swaper/repair_laptop.png" alt="Repair_laptop" />
+        <div class="container">
+          <div class="devices-swiper swiper-container">
+            <ul class="devices__wrapper swiper-wrapper">
+              <li class="devices__slide swiper-slide">
+                <img
+                  src="../src/assets/brands_swaper/repair_laptop.png"
+                  alt="Repair_laptop"
+                />
+              </li>
+
+              <li class="devices__slide swiper-slide">
+                <img
+                  src="./assets/brands_swaper/repair_tablet.png"
+                  alt="Repair_tablet"
+                />
+              </li>
+
+              <li class="devices__slide swiper-slide">
+                <img
+                  src="./assets/brands_swaper/repair_pc.png"
+                  alt="Repair_pc.png"
+                />
+              </li>
+
+              <li class="devices__slide swiper-slide">
+                <img
+                  src="./assets/brands_swaper/repair_monitor.png"
+                  alt="Repair_monitor"
+                />
+              </li>
+
+              <li class="devices__slide swiper-slide">
+                <img
+                  src="./assets/brands_swaper/repair_tablet.png"
+                  alt="Repair_tablet"
+                />
+              </li>
+            </ul>
+
+            <div class="pagination swiper-pagination"></div>
+          </div>
+
+          <!-- Рендер с помощью JS -->
+          <div class="devices__list">
+            <ul
+              id="devices-wrapper"
+              class="devices-wrapper wrapper"
+              data-visible="hidden"
+            ></ul>
+            <button id="devices-button" class="devices-button">
+              <img src="./assets/svg/expand.svg" />
+              Показать всё
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__prices prices">
+        <div class="prices__title-block">
+          <h2 class="prices__title container">ЦЕНЫ НА УСЛУГИ</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="prices-swiper swiper-container_2">
+          <ul class="prices__wrapper swiper-wrapper">
+            <li class="prices-slide swiper-slide">
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
+                <p class="prices-slide__service-name">Диагностика</p>
+              </div>
+
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Цена</h4>
+                <p class="prices-slide__service-price">Бесплатно</p>
+              </div>
+
+              <div class="prices-slide__block">
+                <div class="prices-slide-container">
+                  <h4 class="prices-slide__title-service">Срок</h4>
+                  <p class="prices-slide__service-deadline">30 мин</p>
+                </div>
+                <a class="prices-slide__button" href="#">
+                  Заказать
+                  <img
+                    class="prices-slide__img"
+                    src="./assets/svg/goside.svg"
+                  />
+                </a>
+              </div>
             </li>
 
-            <li class="devices__slide swiper-slide">
-              <img src="./assets/brands_swaper/repair_tablet.png" alt="Repair_tablet" />
+            <li class="prices-slide swiper-slide">
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
+                <p class="prices-slide__service-name">Замена дисплея</p>
+              </div>
+
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Цена</h4>
+                <p class="prices-slide__service-price">1000 &#8381;</p>
+              </div>
+
+              <div class="prices-slide__block">
+                <div class="prices-slide-container">
+                  <h4 class="prices-slide__title-service">Срок</h4>
+                  <p class="prices-slide__service-deadline">30-120 мин</p>
+                </div>
+                <a class="prices-slide__button" href="#">
+                  Заказать
+                  <img
+                    class="prices-slide__img"
+                    src="./assets/svg/goside.svg"
+                  />
+                </a>
+              </div>
             </li>
 
-            <li class="devices__slide swiper-slide">
-              <img src="./assets/brands_swaper/repair_pc.png" alt="Repair_pc.png" />
+            <li class="prices-slide swiper-slide">
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
+                <p class="prices-slide__service-name">
+                  Замена полифографического динамика
+                </p>
+              </div>
+
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Цена</h4>
+                <p class="prices-slide__service-price">1000 &#8381;</p>
+              </div>
+
+              <div class="prices-slide__block">
+                <div class="prices-slide-container">
+                  <h4 class="prices-slide__title-service">Срок</h4>
+                  <p class="prices-slide__service-deadline">30-120 мин</p>
+                </div>
+                <a class="prices-slide__button" href="#">
+                  Заказать
+                  <img
+                    class="prices-slide__img"
+                    src="./assets/svg/goside.svg"
+                  />
+                </a>
+              </div>
             </li>
 
-            <li class="devices__slide swiper-slide">
-              <img src="./assets/brands_swaper/repair_monitor.png" alt="Repair_monitor" />
+            <li class="prices-slide swiper-slide">
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
+                <p class="prices-slide__service-name">
+                  Тестирование с выдачей технического заключения
+                </p>
+              </div>
+
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Цена</h4>
+                <p class="prices-slide__service-price">1000 &#8381;</p>
+              </div>
+
+              <div class="prices-slide__block">
+                <div class="prices-slide-container">
+                  <h4 class="prices-slide__title-service">Срок</h4>
+                  <p class="prices-slide__service-deadline">30-120 мин</p>
+                </div>
+                <a class="prices-slide__button" href="#">
+                  Заказать
+                  <img
+                    class="prices-slide__img"
+                    src="./assets/svg/goside.svg"
+                  />
+                </a>
+              </div>
             </li>
 
-            <li class="devices__slide swiper-slide">
-              <img src="./assets/brands_swaper/repair_tablet.png" alt="Repair_tablet" />
+            <li class="prices-slide swiper-slide">
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
+                <p class="prices-slide__service-name">
+                  Замена программного обеспечения
+                </p>
+              </div>
+
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Цена</h4>
+                <p class="prices-slide__service-price">1000 &#8381;</p>
+              </div>
+
+              <div class="prices-slide__block">
+                <div class="prices-slide-container">
+                  <h4 class="prices-slide__title-service">Срок</h4>
+                  <p class="prices-slide__service-deadline">30-120 мин</p>
+                </div>
+                <a class="prices-slide__button" href="#">
+                  Заказать
+                  <img
+                    class="prices-slide__img"
+                    src="./assets/svg/goside.svg"
+                  />
+                </a>
+              </div>
             </li>
           </ul>
-
           <div class="pagination swiper-pagination"></div>
         </div>
-        <!-- Рендер с помощью JS -->
-        <div class="devices__list ">
-          <ul
-            id="devices-wrapper"
-            class="devices-wrapper wrapper"
-            data-visible="hidden"
-          ></ul>
-          <button id="devices-button" class="devices-button">
-            <img src="./assets/svg/expand.svg"/>
-            Показать всё
-          </button>
+        <div class="prices__list-container">
+          <ul class="prices__list">
+            <li class="prices__list-title">
+              <h4>Ремонтные услуги</h4>
+              <h4>Цена</h4>
+              <h4>Срок</h4>
+            </li>
+            <li class="prices__list-content">
+              <p class="list-content__title">Диагностика</p>
+              <p>Бесплатно</p>
+              <p>30 мин</p>
+              <a class="prices-slide__button" href="#">
+                Заказать
+                <img class="prices-slide__img" src="./assets/svg/goside.svg" />
+              </a>
+            </li>
+            <li class="prices__list-content">
+              <p class="list-content__title">Замена дисплея</p>
+              <p>1000 &#8381;</p>
+              <p>30-120 мин</p>
+              <a class="prices-slide__button" href="#">
+                Заказать
+                <img class="prices-slide__img" src="./assets/svg/goside.svg" />
+              </a>
+            </li>
+            <li class="prices__list-content">
+              <p class="list-content__title">Замена полифонического динамика</p>
+              <p>1000 &#8381;</p>
+              <p>30-120 мин</p>
+              <a class="prices-slide__button" href="#">
+                Заказать
+                <img class="prices-slide__img" src="./assets/svg/goside.svg" />
+              </a>
+            </li>
+            <li class="prices__list-content">
+              <p class="list-content__title">
+                Тестирование с выдачей технического заключения
+              </p>
+              <p>1000 &#8381;</p>
+              <p>30-120 мин</p>
+              <a class="prices-slide__button" href="#">
+                Заказать
+                <img class="prices-slide__img" src="./assets/svg/goside.svg" />
+              </a>
+            </li>
+            <li class="prices__list-content">
+              <p class="list-content__title">Замена программного обеспечения</p>
+              <p>1000 &#8381;</p>
+              <p>30-120 мин</p>
+              <a class="prices-slide__button" href="#">
+                Заказать
+                <img class="prices-slide__img" src="./assets/svg/goside.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="price__text text">
+          <p class="text__content">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.
+          </p>
+          <a class="text__link" src="#"
+            >Получить коммерческое предложение
+            <img class="text__img" src="./assets/svg/more.svg"
+          /></a>
         </div>
       </div>
     </main>

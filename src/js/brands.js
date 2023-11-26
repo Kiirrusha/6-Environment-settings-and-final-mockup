@@ -7,12 +7,13 @@ const buttonImg = brandsButton.querySelector("img");
 const buttonText = brandsButton.lastChild;
 
 function getLength () {
-	if (window.innerWidth >= 768 && window.innerWidth <= 1119) {
+	if (window.outerWidth >= 768 && window.outerWidth <= 1119) {
 		return 6;
 	}
-	if (window.innerWidth >= 1120 ) {
+	if (window.outerWidth >= 1120 ) {
 		return 8;
 	}
+	
 }
 
 const appender = (brand) => {
@@ -48,14 +49,13 @@ function test() {
 	if (brandsWrapper.dataset.visible === "hidden"){
 	brandsWrapper.innerHTML = "";
 
-		if (window.innerWidth >= 768) {
+		if (window.outerWidth >= 768) {
 			let mockBrandsClone = [...mockBrands];
 
 			mockBrandsClone.length = getLength();	
 			mockBrandsClone.forEach(appender);
 		}
 }
-	console.log("test");
 
 }
 
@@ -80,7 +80,7 @@ brandsButton.addEventListener("click", (e) => {
 });
 
 
-window.onresize = test;
+window.addEventListener("resize", test);
 
 let mockBrandsClone = [...mockBrands];
 

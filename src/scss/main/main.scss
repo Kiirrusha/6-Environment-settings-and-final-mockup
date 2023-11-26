@@ -11,18 +11,23 @@
 @import "section/devices/swiper.scss";
 @import "section/devices/list.scss";
 
+@import "section/price/title.scss";
+@import "section/price/swiper.scss";
+@import "section/price/list.scss";
+@import "section/price/text.scss";
 
+.container {
+  margin: 0 16px;
 
+  @media (min-width: 768px) {
+    margin: 0 24px;
+  }
 
+  @media (min-width: 1020px) {
+    margin: 0 32px;
+  }
+}
 
 .main {
-    padding: 0 16px;
-
-    @media (min-width: 768px) {
-          padding: 0 24px;
-    }
-
-    @media (min-width: 1020px) {
-          padding: 0 32px;
-    }
-  }
+  width: 100vw;
+}

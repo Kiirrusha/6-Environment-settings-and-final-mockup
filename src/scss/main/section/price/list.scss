@@ -1,0 +1,34 @@
+.prices__list {
+    position: relative;
+    display: grid;
+    // grid-template-columns: 1fr 74px 50px 119px;
+    grid-template-rows: repeat (6 1fr);
+    
+    // gap: ;
+
+    padding: 23px 24px;
+}
+
+.prices__list-title {
+    display: flex;
+    justify-content: space-between;
+   
+   
+}
+
+.prices__list-content {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    white-space: nowrap;
+    height: 64px;
+
+    gap: 20px;
+    
+}
+
+
+.list-content__title {
+    min-width: 400px;
+}
+
+

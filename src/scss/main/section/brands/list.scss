@@ -22,7 +22,7 @@
   
     grid-template-columns: repeat(3, 224px); 
 
-      @media (min-width: 1020px) {
+      @media (min-width: 1120px) {
         grid-template-columns: repeat(4, 224px);
       }
   }
