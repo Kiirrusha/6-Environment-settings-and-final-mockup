@@ -30,6 +30,19 @@
     letter-spacing: 0.2px;
     margin-bottom: 16px;
   }
+
+  #main__content-box {
+    display: grid;
+    grid-template-rows: 0fr;
+  
+    overflow: hidden;
+
+    transition: grid-template-rows 0.5s;
+
+    &.open {
+      grid-template-rows: 1fr;
+    }
+  }
   
   .main__content-more {
     display: flex;

@@ -7,12 +7,12 @@
   padding: 40px 32px 0 32px;
 
   z-index: 4;
-  @media (max-width: 767px) {
+  @media (max-width: 526px) {
     width: 100%;
     padding: 24px 16px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 527px) {
     width: 440px;
   }
 
@@ -37,7 +37,7 @@
 .menu-message__title {
   display: flex;
   padding-bottom: 8px;
-  @media (max-width: 767px) {
+  @media (max-width: 526px) {
     flex-direction: column;
     gap: 40px;
     // gap: 10px;
@@ -50,7 +50,7 @@
   position: absolute;
   left: -88px;
   top: 33px;
-  @media (max-width: 767px) {
+  @media (max-width: 526px) {
     position: relative;
     width: 40px;
     height: 40px;
@@ -75,7 +75,7 @@
   position: absolute;
   left: 0px;
   top: 33px;
-  @media (max-width: 767px) {
+  @media (max-width: 526px) {
     
     left: 0;
     top: 98px;

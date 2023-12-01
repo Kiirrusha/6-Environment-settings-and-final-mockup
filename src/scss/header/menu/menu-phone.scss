@@ -8,12 +8,12 @@
 
   z-index: 4;
 
-  @media (max-width: 767px) {
+  @media (max-width: 526px) {
     width: 100%;
     padding: 24px 16px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 527px) {
     width: 440px;
   }
 
@@ -33,7 +33,7 @@
 }
 
 .menu-phone__title {
-  @media (max-width: 767px) {
+  @media (max-width: 526px) {
     display: flex;
     flex-direction: column;
     gap: 40px;
