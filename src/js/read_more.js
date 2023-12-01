@@ -9,11 +9,11 @@ btn.addEventListener("click", () => {
     if (text.innerText =="Читать далее") {
         text.innerText = "Скрыть";
         more.style.display = "inline";
-        img.src = "./assets/svg/expand2.svg";
+        img.src = "../assets/svg/expand2.svg";
     } else {
         text.innerText = "Читать далее";
         more.style.display = "none";
-        img.src = "./assets/svg/expand.svg";
+        img.src = "../assets/svg/expand.svg";
     }
 }
 );
