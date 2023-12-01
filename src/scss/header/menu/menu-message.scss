@@ -7,6 +7,11 @@
   padding: 40px 32px 0 32px;
 
   z-index: 4;
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 24px 16px;
+  }
+
   @media (min-width: 768px) {
     width: 440px;
   }
@@ -32,12 +37,26 @@
 .menu-message__title {
   display: flex;
   padding-bottom: 8px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 40px;
+    // gap: 10px;
+
+
+  }
 }
 
 .title__img {
   position: absolute;
   left: -88px;
   top: 33px;
+  @media (max-width: 767px) {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+  }
 }
 
 .title__text {
@@ -56,6 +75,11 @@
   position: absolute;
   left: 0px;
   top: 33px;
+  @media (max-width: 767px) {
+    
+    left: 0;
+    top: 98px;
+  }
 }
 
 .input-size {
