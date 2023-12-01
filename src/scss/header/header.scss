@@ -1,27 +1,35 @@
 @import "menu/menu.scss";
 @import "menu/menu__sidebar.scss";
+@import "menu/menu-message.scss";
+@import "menu/menu-phone.scss";
 @import "logo/logo.scss";
 @import "communications-list/communications-list.scss";
 @import "service-list/service-list.scss";
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    border-bottom: 1px solid #d9fff5;
-  
-    background-color: #fff;
-  
-    height: 88px;
-    padding: 24px 16px 24px 16px;
-    margin: 0 auto 24px;
+//   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-      @media (min-width: 768px) {
-            padding: 24px;
-      }
-      
-      @media (min-width: 1020px) {
-            padding: 32px;
-      }
+  border-bottom: 1px solid #d9fff5;
+
+  background-color: #fff;
+
+  height: 88px;
+  padding: 24px 16px 24px 16px;
+  margin: 0 auto 24px;
+
+  @media (min-width: 768px) {
+    padding: 24px;
   }
+
+  @media (min-width: 1020px) {
+    padding: 32px;
+  }
+
+  @media (min-width: 1366px) {
+    position: relative;
+    top: -88px;
+  }
+}

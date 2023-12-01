@@ -1,0 +1,55 @@
+.header__menu-phone {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  height: 100vh;
+
+  padding: 40px 32px 0 32px;
+
+  z-index: 4;
+  @media (min-width: 768px) {
+    width: 440px;
+  }
+
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  // @media (min-width: 1366px) {
+  //   top: 88px;
+  // }
+
+  background: #fff;
+  border-left: 1px solid #d9fff5;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+
+  transition-property: right;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.menu-phone__text {
+  color: #7e7e82;
+
+  font-family: "TTLakes-Medium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+}
+
+.menu-phone__text-link {
+  color: #ff3e79;
+}
+
+.menu-phone__btn {
+  width: 136px;
+  height: 32px;
+  align-self: flex-end;
+  border-radius: 16px;
+  border: none;
+  background: #ff3e79;
+
+  color: #fff;
+}

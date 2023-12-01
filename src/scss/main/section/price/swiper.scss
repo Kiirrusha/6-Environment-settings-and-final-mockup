@@ -1,7 +1,9 @@
 .prices-swiper {
   position: relative;
-  width: 330px;
-  height: 198px;
+  // width: 330px;
+  min-width: 288px;
+  max-width: 100%;
+  height: 220px;
   overflow: hidden;
   margin: auto;
   z-index: 0;
@@ -87,6 +89,8 @@
 
     color: #FFF;
 
+    // padding: 0 0 0 23px;
+
     padding-left: 10px;
     text-align: left;
     font-family: "TTLakes-Bold";
@@ -96,4 +100,8 @@
     line-height: 24px; /* 200% */
     letter-spacing: -0.15px;
     text-transform: uppercase;
+}
+
+.prices-swiper .pagination {
+  bottom: 5px !important;
 }

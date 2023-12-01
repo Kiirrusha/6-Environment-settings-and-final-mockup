@@ -4,9 +4,25 @@
     align-items: center;
   
     height: 56px;
+
+    
   
-    padding-right: 16px;
     margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% + 74px);
+      height: 56px;
+      left: -50px;
+      border-top: 1px solid #D9FFF5;
+      background: linear-gradient(90deg, #F8F8F8 1.39%, #FFF 100%);
+      z-index: -1;
+    }
   }
   
   .brands__title {

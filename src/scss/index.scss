@@ -1,17 +1,19 @@
 @import "header/header.scss";
 @import "main/main.scss";
+@import "footer/footer.scss";
+
+
 
 
 html {
   font-size: 16px;
   font-style: normal;
-  font-family: TTLakes-Regular;
+  font-family: "TTLakes-Regular";
   background-color: #f8f8f8;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 img {
   vertical-align: middle;
 }
-
 

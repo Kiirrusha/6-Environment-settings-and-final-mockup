@@ -13,6 +13,7 @@ function getLength () {
 	if (window.innerWidth >= 1120 ) {
 		return 4;
 	}
+	
 }
 
 const appender = (brand) => {

@@ -1,12 +1,23 @@
 .devices-swiper {
     position: relative;
-    width: 330px;
-    height: 198px;
+    height: 200px;
+    min-width: 288px;
+    max-width: 100%;
     overflow: hidden;
     margin: auto;
     z-index: 0;
 
+    // margin-bottom: 24px;
+
       @media (min-width: 768px) {
         display: none;
       }
+  }
+
+  .devices__wrapper {
+    padding: 0;
+  }
+
+  .devices-swiper .pagination {
+    bottom: 6px !important;
   }

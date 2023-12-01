@@ -15,19 +15,21 @@
 
   <body>
     <header class="header">
-      <nav class="header__menu">
+      <nav class="header__menu menu">
         <input id="menu__moving" type="checkbox" hidden />
         <label class="menu__label" for="menu__moving">
           <img class="menu__icon" src="./assets/img/burger.svg" alt="menu" />
         </label>
         <div class="menu__divider divider"></div>
 
+        <div class="menu__area-blur"></div>
+
         <div class="menu__sidebar">
           <div class="sidebar__icon">
             <input id="menu__moving" class="test" type="checkbox" hidden />
             <label class="menu__label" for="menu__moving">
               <img
-                class="sidebar__icon-img"
+                class="sidebar__icon-img exit"
                 src="./assets/img/burger_exit.svg"
                 alt="menu_exit"
               />
@@ -46,27 +48,46 @@
 
           <ul class="sidebar__menu-list">
             <li class="menu-list__item">
-              <a class="menu-list__link menu-list__link-active" href="#"
-                >Ремонт техники</a
+              <input id="menu-list__radio-0" type="radio" hidden />
+              <label class="menu-list__link" for="menu-list__radio-0"
+                >Ремонт техники</label
               >
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Корпоративным клиентам</a>
+              <input id="menu-list__radio-1" type="radio" hidden />
+              <label class="menu-list__link" for="menu-list__radio-1"
+                >Корпоративным клиентам</label
+              >
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Продавцам техники</a>
+              <input id="menu-list__radio-2" type="radio" hidden />
+              <label class="menu-list__link" for="menu-list__radio-2"
+                >Продавцам техники</label
+              >
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Партнерам</a>
+              <input id="menu-list__radio-3" type="radio" hidden />
+              <label class="menu-list__link" for="menu-list__radio-3"
+                >Партнерам</label
+              >
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Производителям</a>
+              <input id="menu-list__radio-4" type="radio" hidden />
+              <label class="menu-list__link" for="menu-list__radio-4"
+                >Производителям</label
+              >
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Наши сервесные центры</a>
+              <input id="menu-list__radio-5" type="radio" hidden />
+              <label class="menu-list__link" for="menu-list__radio-5"
+                >Наши сервесные центры</label
+              >
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Контакты</a>
+              <input id="menu-list__radio-6" type="radio" hidden />
+              <label class="menu-list__link" for="menu-list__radio-6"
+                >Контакты</label
+              >
             </li>
           </ul>
 
@@ -74,6 +95,7 @@
             <li class="sidebar__communications-item">
               <a class="sidebar__communications-link" href="#"
                 ><img
+                  id="sidebar-phone"
                   class="communications-list__icon-phone"
                   src="./assets/img/call.svg"
                   alt="позвонить"
@@ -82,6 +104,7 @@
             <li class="sidebar__communications-item">
               <a class="sidebar__communications-link" href="#"
                 ><img
+                  id="sidebar-message"
                   class="communications-list__icon-chat"
                   src="./assets/img/chat.svg"
                   alt="чат"
@@ -123,6 +146,7 @@
         <li class="communications-list__item">
           <a class="communications-list__link" href="#"
             ><img
+              id="header-phone"
               class="communications-list__icon-phone"
               src="./assets/img/call.svg"
               alt="позвонить"
@@ -131,6 +155,7 @@
         <li class="communications-list__item">
           <a class="communications-list__link" href="#"
             ><img
+              id="header-message"
               class="communications-list__icon-chat"
               src="./assets/img/chat.svg"
               alt="чат"
@@ -167,36 +192,131 @@
           /></a>
         </li>
       </ul>
+
+      <div class="header__menu-message menu-message">
+        <div class="menu-message__title">
+          <img class="title__img" src="./assets/img/burger_exit.svg" />
+          <h1 class="title__text">Обратная связь</h1>
+        </div>
+
+        <input
+          class="menu-message__input-name input-size"
+          type="text"
+          placeholder="Имя"
+        />
+        <input
+          class="menu-message__input-phone input-size"
+          type="number"
+          placeholder="Телефон"
+        />
+        <input
+          class="menu-message__input-mail input-size"
+          type="text"
+          placeholder="Электронная почта"
+        />
+        <input
+          class="menu-message__input-message"
+          type="text"
+          placeholder="Сообщение"
+        />
+
+        <p class="menu-message__text">
+          Нажимая “отправить”, вы даете согласие на
+          <a class="menu-message__text-link" href="#"
+            >обработку персональных данных</a
+          >
+          и соглашаетесь с нашей
+          <a class="menu-message__text-link" href="#"
+            >политикой конфиденциальности</a
+          >
+        </p>
+
+        <button class="menu-message__btn">
+          отправить <img src="./assets/svg/goside.svg" />
+        </button>
+      </div>
+
+      <div class="header__menu-phone menu-message">
+        <div class="menu-phone__title">
+          <img class="title__img" src="./assets/img/burger_exit.svg" />
+          <h1 class="title__text">Обратная связь</h1>
+        </div>
+
+        <input
+          class="menu-phone__input-phone input-size"
+          type="number"
+          placeholder="Телефон"
+        />
+
+        <p class="menu-phone__text">
+          Нажимая “отправить”, вы даете согласие на
+          <a class="menu-phone__text-link" href="#"
+            >обработку персональных данных</a
+          >
+          и соглашаетесь с нашей
+          <a class="menu-phone__text-link" href="#"
+            >политикой конфиденциальности</a
+          >
+        </p>
+
+        <button class="menu-phone__btn">
+          отправить <img src="./assets/svg/goside.svg" />
+        </button>
+      </div>
     </header>
 
     <main class="main">
-      <h1 class="main__title container">Услуги и сервисы</h1>
+      <h1 class="main__title">Услуги и сервисы</h1>
 
-      <ul class="main__services-panel services-panel container">
+      <ul class="main__services-panel services-panel">
         <li class="services-panel__item services-panel__item-active">
-          <a class="services-panel__link" href="#">Ремонтируемые устройства</a>
+          <input id="services-panel__radio-1" type="radio" hidden />
+          <label class="services-panel__link" for="services-panel__radio-1"
+            >Ремонтируемые устройства</label
+          >
         </li>
         <li class="services-panel__item">
-          <a class="services-panel__link" href="#">Дополнительные услуги</a>
+          <input id="services-panel__radio-2" type="radio" hidden />
+          <label
+            class="services-panel__link"
+            for="services-panel__radio-2"
+            for="services-panel__radio-1"
+            >Дополнительные услуги</label
+          >
         </li>
         <li class="services-panel__item">
-          <a class="services-panel__link" href="#">Цены на услуги</a>
+          <input id="services-panel__radio-3" type="radio" hidden />
+          <label class="services-panel__link" for="services-panel__radio-3"
+            >Цены на услуги</label
+          >
         </li>
         <li class="services-panel__item">
-          <a class="services-panel__link" href="#">Специальные цены</a>
+          <input id="services-panel__radio-4" type="radio" hidden />
+          <label class="services-panel__link" for="services-panel__radio-4"
+            >Специальные цены</label
+          >
         </li>
         <li class="services-panel__item">
-          <a class="services-panel__link" href="#">Ремонтируемые бренды</a>
+          <input id="services-panel__radio-5" type="radio" hidden />
+          <label class="services-panel__link" for="services-panel__radio-5"
+            >Ремонтируемые бренды</label
+          >
         </li>
         <li class="services-panel__item">
-          <a class="services-panel__link" href="#">Адреса сервисных центров</a>
+          <input id="services-panel__radio-6" type="radio" hidden />
+          <label class="services-panel__link" for="services-panel__radio-6"
+            >Адреса сервисных центров</label
+          >
         </li>
         <li class="services-panel__item">
-          <a class="services-panel__link" href="#">Отзывы</a>
+          <input id="services-panel__radio-7" type="radio" hidden />
+          <label class="services-panel__link" for="services-panel__radio-7"
+            >Отзывы</label
+          >
         </li>
       </ul>
 
-      <div class="main__content container">
+      <div class="main__content">
         <div class="main__content-text-block">
           <p class="main__content-text">
             Мы являемся авторизованным сервисным центром по ремонту техники
@@ -206,17 +326,20 @@
           <p class="main__content-text">
             Мы успешно работаем с 1992 года и заслужили репутацию надежного
             партнера, что подтверждает большое количество постоянных клиентов.
-            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-            очередь, советуют нас родным и близким.
+            <span id="more"
+              >Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.</span
+            >
           </p>
-          <div class="main__content-expand-text">
+          <button class="main__content-more">
             <img
               class="main__content-expand-img"
               src="./assets/img/expand.svg"
               alt="развернуть текст"
             />
+
             <h2 class="main__content-expand-title">Читать далее</h2>
-          </div>
+          </button>
         </div>
 
         <div class="main__content-img-block">
@@ -228,79 +351,67 @@
         </div>
       </div>
 
-      <div class="main__brands brands">
+      <div class="main__brands brands lines">
         <div class="brands__title-block">
-          <h2 class="brands__title container">
-            Ремонт техники различных брендов
-          </h2>
+          <h2 class="brands__title">Ремонт техники различных брендов</h2>
         </div>
 
-        <div class="container">
-          <div class="brands-swiper swiper-container">
-            <ul class="brands__wrapper swiper-wrapper">
-              <li class="brands__slide swiper-slide">
-                <img
-                  src="../src/assets/brands_swaper/lenovo.png"
-                  alt="Lenovo"
-                />
-              </li>
+        <div class="brands-swiper swiper-container">
+          <ul class="brands__wrapper swiper-wrapper">
+            <li class="brands__slide swiper-slide">
+              <img src="../src/assets/brands_swaper/lenovo.png" alt="Lenovo" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img src="./assets/brands_swaper/sumsung.png" alt="Sumsung" />
-              </li>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/sumsung.png" alt="Sumsung" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img src="./assets/brands_swaper/msi.png" alt="MSI" />
-              </li>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/msi.png" alt="MSI" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img
-                  src="./assets/brands_swaper/viewsonic.png"
-                  alt="ViewSonic"
-                />
-              </li>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/viewsonic.png" alt="ViewSonic" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img src="./assets/brands_swaper/hp.png" alt="Hp" />
-              </li>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/hp.png" alt="Hp" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img src="./assets/brands_swaper/bosch.png" alt="BOSCH" />
-              </li>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/bosch.png" alt="BOSCH" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img src="./assets/brands_swaper/acer.png" alt="acer" />
-              </li>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/acer.png" alt="acer" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img src="./assets/brands_swaper/sony.png" alt="Sony" />
-              </li>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/sony.png" alt="Sony" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img
-                  src="./assets/brands_swaper/panasonic.png"
-                  alt="Panasonic"
-                />
-              </li>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/panasonic.png" alt="Panasonic" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img src="./assets/brands_swaper/honor.png" alt="Honor" />
-              </li>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/honor.png" alt="Honor" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img src="./assets/brands_swaper/asus.png" alt="Asus" />
-              </li>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/asus.png" alt="Asus" />
+            </li>
 
-              <li class="brands__slide swiper-slide">
-                <img src="./assets/brands_swaper/dell.png" alt="Dell" />
-              </li>
-            </ul>
+            <li class="brands__slide swiper-slide">
+              <img src="./assets/brands_swaper/dell.png" alt="Dell" />
+            </li>
+          </ul>
 
-            <div class="pagination swiper-pagination"></div>
-          </div>
+          <div class="pagination swiper-pagination"></div>
         </div>
+
         <!-- Рендер с помощью JS -->
-        <div class="brands__list container">
+        <div class="brands__list">
           <ul
             id="brands-wrapper"
             class="brands-wrapper wrapper"
@@ -313,286 +424,292 @@
         </div>
       </div>
 
-      <div class="main__devices devices">
+      <div class="main__devices devices lines">
         <div class="devices__title-block">
-          <h2 class="devices__title container container">
-            Ремонт различных видов техники
-          </h2>
+          <h2 class="devices__title">Ремонт различных видов техники</h2>
         </div>
 
-        <div class="container">
-          <div class="devices-swiper swiper-container">
-            <ul class="devices__wrapper swiper-wrapper">
-              <li class="devices__slide swiper-slide">
-                <img
-                  src="../src/assets/brands_swaper/repair_laptop.png"
-                  alt="Repair_laptop"
-                />
-              </li>
+        <div class="devices-swiper swiper-container">
+          <ul class="devices__wrapper swiper-wrapper">
+            <li class="devices__slide swiper-slide">
+              <img
+                src="../src/assets/brands_swaper/repair_laptop.png"
+                alt="Repair_laptop"
+              />
+            </li>
 
-              <li class="devices__slide swiper-slide">
-                <img
-                  src="./assets/brands_swaper/repair_tablet.png"
-                  alt="Repair_tablet"
-                />
-              </li>
+            <li class="devices__slide swiper-slide">
+              <img
+                src="./assets/brands_swaper/repair_tablet.png"
+                alt="Repair_tablet"
+              />
+            </li>
 
-              <li class="devices__slide swiper-slide">
-                <img
-                  src="./assets/brands_swaper/repair_pc.png"
-                  alt="Repair_pc.png"
-                />
-              </li>
+            <li class="devices__slide swiper-slide">
+              <img
+                src="./assets/brands_swaper/repair_pc.png"
+                alt="Repair_pc.png"
+              />
+            </li>
 
-              <li class="devices__slide swiper-slide">
-                <img
-                  src="./assets/brands_swaper/repair_monitor.png"
-                  alt="Repair_monitor"
-                />
-              </li>
+            <li class="devices__slide swiper-slide">
+              <img
+                src="./assets/brands_swaper/repair_monitor.png"
+                alt="Repair_monitor"
+              />
+            </li>
 
-              <li class="devices__slide swiper-slide">
-                <img
-                  src="./assets/brands_swaper/repair_tablet.png"
-                  alt="Repair_tablet"
-                />
-              </li>
-            </ul>
+            <li class="devices__slide swiper-slide">
+              <img
+                src="./assets/brands_swaper/repair_tablet.png"
+                alt="Repair_tablet"
+              />
+            </li>
+          </ul>
 
-            <div class="pagination swiper-pagination"></div>
-          </div>
+          <div class="pagination swiper-pagination"></div>
+        </div>
 
-          <!-- Рендер с помощью JS -->
-          <div class="devices__list">
-            <ul
-              id="devices-wrapper"
-              class="devices-wrapper wrapper"
-              data-visible="hidden"
-            ></ul>
-            <button id="devices-button" class="devices-button">
-              <img src="./assets/svg/expand.svg" />
-              Показать всё
-            </button>
-          </div>
+        <!-- Рендер с помощью JS -->
+        <div class="devices__list">
+          <ul
+            id="devices-wrapper"
+            class="devices-wrapper wrapper"
+            data-visible="hidden"
+          ></ul>
+          <button id="devices-button" class="devices-button">
+            <img src="./assets/svg/expand.svg" />
+            Показать всё
+          </button>
         </div>
       </div>
 
       <div class="main__prices prices">
         <div class="prices__title-block">
-          <h2 class="prices__title container">ЦЕНЫ НА УСЛУГИ</h2>
+          <h2 class="prices__title">ЦЕНЫ НА УСЛУГИ</h2>
         </div>
       </div>
 
-      <div class="container">
-        <div class="prices-swiper swiper-container_2">
-          <ul class="prices__wrapper swiper-wrapper">
-            <li class="prices-slide swiper-slide">
+      <div class="prices-swiper swiper-container_2">
+        <ul class="prices__wrapper swiper-wrapper">
+          <li class="prices-slide swiper-slide">
+            <div class="prices-slide-container">
+              <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
+              <p class="prices-slide__service-name">Диагностика</p>
+            </div>
+
+            <div class="prices-slide-container">
+              <h4 class="prices-slide__title-service">Цена</h4>
+              <p class="prices-slide__service-price">Бесплатно</p>
+            </div>
+
+            <div class="prices-slide__block">
               <div class="prices-slide-container">
-                <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
-                <p class="prices-slide__service-name">Диагностика</p>
+                <h4 class="prices-slide__title-service">Срок</h4>
+                <p class="prices-slide__service-deadline">30 мин</p>
               </div>
-
-              <div class="prices-slide-container">
-                <h4 class="prices-slide__title-service">Цена</h4>
-                <p class="prices-slide__service-price">Бесплатно</p>
-              </div>
-
-              <div class="prices-slide__block">
-                <div class="prices-slide-container">
-                  <h4 class="prices-slide__title-service">Срок</h4>
-                  <p class="prices-slide__service-deadline">30 мин</p>
-                </div>
-                <a class="prices-slide__button" href="#">
-                  Заказать
-                  <img
-                    class="prices-slide__img"
-                    src="./assets/svg/goside.svg"
-                  />
-                </a>
-              </div>
-            </li>
-
-            <li class="prices-slide swiper-slide">
-              <div class="prices-slide-container">
-                <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
-                <p class="prices-slide__service-name">Замена дисплея</p>
-              </div>
-
-              <div class="prices-slide-container">
-                <h4 class="prices-slide__title-service">Цена</h4>
-                <p class="prices-slide__service-price">1000 &#8381;</p>
-              </div>
-
-              <div class="prices-slide__block">
-                <div class="prices-slide-container">
-                  <h4 class="prices-slide__title-service">Срок</h4>
-                  <p class="prices-slide__service-deadline">30-120 мин</p>
-                </div>
-                <a class="prices-slide__button" href="#">
-                  Заказать
-                  <img
-                    class="prices-slide__img"
-                    src="./assets/svg/goside.svg"
-                  />
-                </a>
-              </div>
-            </li>
-
-            <li class="prices-slide swiper-slide">
-              <div class="prices-slide-container">
-                <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
-                <p class="prices-slide__service-name">
-                  Замена полифографического динамика
-                </p>
-              </div>
-
-              <div class="prices-slide-container">
-                <h4 class="prices-slide__title-service">Цена</h4>
-                <p class="prices-slide__service-price">1000 &#8381;</p>
-              </div>
-
-              <div class="prices-slide__block">
-                <div class="prices-slide-container">
-                  <h4 class="prices-slide__title-service">Срок</h4>
-                  <p class="prices-slide__service-deadline">30-120 мин</p>
-                </div>
-                <a class="prices-slide__button" href="#">
-                  Заказать
-                  <img
-                    class="prices-slide__img"
-                    src="./assets/svg/goside.svg"
-                  />
-                </a>
-              </div>
-            </li>
-
-            <li class="prices-slide swiper-slide">
-              <div class="prices-slide-container">
-                <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
-                <p class="prices-slide__service-name">
-                  Тестирование с выдачей технического заключения
-                </p>
-              </div>
-
-              <div class="prices-slide-container">
-                <h4 class="prices-slide__title-service">Цена</h4>
-                <p class="prices-slide__service-price">1000 &#8381;</p>
-              </div>
-
-              <div class="prices-slide__block">
-                <div class="prices-slide-container">
-                  <h4 class="prices-slide__title-service">Срок</h4>
-                  <p class="prices-slide__service-deadline">30-120 мин</p>
-                </div>
-                <a class="prices-slide__button" href="#">
-                  Заказать
-                  <img
-                    class="prices-slide__img"
-                    src="./assets/svg/goside.svg"
-                  />
-                </a>
-              </div>
-            </li>
-
-            <li class="prices-slide swiper-slide">
-              <div class="prices-slide-container">
-                <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
-                <p class="prices-slide__service-name">
-                  Замена программного обеспечения
-                </p>
-              </div>
-
-              <div class="prices-slide-container">
-                <h4 class="prices-slide__title-service">Цена</h4>
-                <p class="prices-slide__service-price">1000 &#8381;</p>
-              </div>
-
-              <div class="prices-slide__block">
-                <div class="prices-slide-container">
-                  <h4 class="prices-slide__title-service">Срок</h4>
-                  <p class="prices-slide__service-deadline">30-120 мин</p>
-                </div>
-                <a class="prices-slide__button" href="#">
-                  Заказать
-                  <img
-                    class="prices-slide__img"
-                    src="./assets/svg/goside.svg"
-                  />
-                </a>
-              </div>
-            </li>
-          </ul>
-          <div class="pagination swiper-pagination"></div>
-        </div>
-        <div class="prices__list-container">
-          <ul class="prices__list">
-            <li class="prices__list-title">
-              <h4>Ремонтные услуги</h4>
-              <h4>Цена</h4>
-              <h4>Срок</h4>
-            </li>
-            <li class="prices__list-content">
-              <p class="list-content__title">Диагностика</p>
-              <p>Бесплатно</p>
-              <p>30 мин</p>
               <a class="prices-slide__button" href="#">
                 Заказать
                 <img class="prices-slide__img" src="./assets/svg/goside.svg" />
               </a>
-            </li>
-            <li class="prices__list-content">
-              <p class="list-content__title">Замена дисплея</p>
-              <p>1000 &#8381;</p>
-              <p>30-120 мин</p>
+            </div>
+          </li>
+
+          <li class="prices-slide swiper-slide">
+            <div class="prices-slide-container">
+              <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
+              <p class="prices-slide__service-name">Замена дисплея</p>
+            </div>
+
+            <div class="prices-slide-container">
+              <h4 class="prices-slide__title-service">Цена</h4>
+              <p class="prices-slide__service-price">1000 &#8381;</p>
+            </div>
+
+            <div class="prices-slide__block">
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Срок</h4>
+                <p class="prices-slide__service-deadline">30-120 мин</p>
+              </div>
               <a class="prices-slide__button" href="#">
                 Заказать
                 <img class="prices-slide__img" src="./assets/svg/goside.svg" />
               </a>
-            </li>
-            <li class="prices__list-content">
-              <p class="list-content__title">Замена полифонического динамика</p>
-              <p>1000 &#8381;</p>
-              <p>30-120 мин</p>
+            </div>
+          </li>
+
+          <li class="prices-slide swiper-slide">
+            <div class="prices-slide-container">
+              <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
+              <p class="prices-slide__service-name">
+                Замена полифографического динамика
+              </p>
+            </div>
+
+            <div class="prices-slide-container">
+              <h4 class="prices-slide__title-service">Цена</h4>
+              <p class="prices-slide__service-price">1000 &#8381;</p>
+            </div>
+
+            <div class="prices-slide__block">
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Срок</h4>
+                <p class="prices-slide__service-deadline">30-120 мин</p>
+              </div>
               <a class="prices-slide__button" href="#">
                 Заказать
                 <img class="prices-slide__img" src="./assets/svg/goside.svg" />
               </a>
-            </li>
-            <li class="prices__list-content">
-              <p class="list-content__title">
+            </div>
+          </li>
+
+          <li class="prices-slide swiper-slide">
+            <div class="prices-slide-container">
+              <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
+              <p class="prices-slide__service-name">
                 Тестирование с выдачей технического заключения
               </p>
-              <p>1000 &#8381;</p>
-              <p>30-120 мин</p>
-              <a class="prices-slide__button" href="#">
-                Заказать
-                <img class="prices-slide__img" src="./assets/svg/goside.svg" />
-              </a>
-            </li>
-            <li class="prices__list-content">
-              <p class="list-content__title">Замена программного обеспечения</p>
-              <p>1000 &#8381;</p>
-              <p>30-120 мин</p>
-              <a class="prices-slide__button" href="#">
-                Заказать
-                <img class="prices-slide__img" src="./assets/svg/goside.svg" />
-              </a>
-            </li>
-          </ul>
-        </div>
+            </div>
 
-        <div class="price__text text">
-          <p class="text__content">
-            Все цены указаны с учетом НДС. Стоимость ремонта указана на
-            единичную услугу. Для получения коммерческого предложения на
-            постоянное обслуживание, оставьте заявку.
-          </p>
-          <a class="text__link" src="#"
-            >Получить коммерческое предложение
-            <img class="text__img" src="./assets/svg/more.svg"
-          /></a>
-        </div>
+            <div class="prices-slide-container">
+              <h4 class="prices-slide__title-service">Цена</h4>
+              <p class="prices-slide__service-price">1000 &#8381;</p>
+            </div>
+
+            <div class="prices-slide__block">
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Срок</h4>
+                <p class="prices-slide__service-deadline">30-120 мин</p>
+              </div>
+              <a class="prices-slide__button" href="#">
+                Заказать
+                <img class="prices-slide__img" src="./assets/svg/goside.svg" />
+              </a>
+            </div>
+          </li>
+
+          <li class="prices-slide swiper-slide">
+            <div class="prices-slide-container">
+              <h4 class="prices-slide__title-service">Ремонтные услуги</h4>
+              <p class="prices-slide__service-name">
+                Замена программного обеспечения
+              </p>
+            </div>
+
+            <div class="prices-slide-container">
+              <h4 class="prices-slide__title-service">Цена</h4>
+              <p class="prices-slide__service-price">1000 &#8381;</p>
+            </div>
+
+            <div class="prices-slide__block">
+              <div class="prices-slide-container">
+                <h4 class="prices-slide__title-service">Срок</h4>
+                <p class="prices-slide__service-deadline">30-120 мин</p>
+              </div>
+              <a class="prices-slide__button" href="#">
+                Заказать
+                <img class="prices-slide__img" src="./assets/svg/goside.svg" />
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="pagination swiper-pagination"></div>
+      </div>
+      <!-- <div class="container"> -->
+      <table class="prices__list-container">
+        <tbody>
+          <tr>
+            <th>Ремонтные услуги</th>
+            <th>Цена</th>
+            <th>Срок</th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <td>Диагностика</td>
+            <td>Бесплатно</td>
+            <td>30 мин</td>
+            <td S>
+              <button class="table__button">
+                Заказать
+                <img class="tst" src="./assets/svg/goside.svg" />
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="list-content__title">Замена дисплея</td>
+            <td>1000 &#8381;</td>
+            <td>30-120 мин</td>
+            <td>
+              <button class="table__button">
+                Заказать
+                <img class="tst" src="./assets/svg/goside.svg" />
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="list-content__title">Замена полифонического динамика</td>
+            <td>1000 &#8381;</td>
+            <td>30-120 мин</td>
+            <td>
+              <button class="table__button">
+                Заказать
+                <img class="tst" src="./assets/svg/goside.svg" />
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="list-content__title">
+              Тестирование с выдачей технического заключения
+            </td>
+            <td>1000 &#8381;</td>
+            <td>30-120 мин</td>
+            <td>
+              <button class="table__button">
+                Заказать
+                <img class="tst" src="./assets/svg/goside.svg" />
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="list-content__title">Замена программного обеспечения</td>
+            <td>1000 &#8381;</td>
+            <td>30-120 мин</td>
+            <td>
+              <button class="table__button">
+                Заказать
+                <img class="tst" src="./assets/svg/goside.svg" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- </div> -->
+
+      <div class="price__text text">
+        <p class="text__content">
+          Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+          услугу. Для получения коммерческого предложения на постоянное
+          обслуживание, оставьте заявку.
+        </p>
+        <a class="text__link" src="#"
+          >Получить коммерческое предложение
+          <img class="text__img" src="./assets/svg/more.svg"
+        /></a>
       </div>
     </main>
+
+    <footer class="footer lines">
+      <p class="footer__text-first">© 2019 CPS Разработано командой Apesong</p>
+      <p class="footer__text-second">Политика конфиденциальности</p>
+      <p class="footer__text-third">
+        Информация, размещенная на данной странице, не является публичной
+        офертой
+      </p>
+    </footer>
   </body>
 </html>

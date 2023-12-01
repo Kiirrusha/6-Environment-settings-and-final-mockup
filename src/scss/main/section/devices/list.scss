@@ -1,68 +1,69 @@
 .devices__list {
-    display: none;
-    flex-direction: column;
-    align-items: start;
-    gap: 24px;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
 
-      @media (min-width: 768px) {
-            display: flex;
-        }
-  }
-  
-  
-  .devices-wrapper {
-    display: grid;
-    overflow: hidden;
-    justify-content: space-between;
-    justify-items: center;
-    gap: 24px 16px;
-    width: 100%;
-  
-    grid-template-columns: repeat(3, 224px); 
-
-      @media (min-width: 1120px) {
-        grid-template-columns: repeat(4, 224px);
-      }
-  }
-  
-  
-  .devices-slide {
-    width: 224px;
-    height: 160px;
-
-    border-radius: 6px;
-    border: 1px solid #EAEAEA;
-
-    background: #FFF;
-
-    padding: 16px;
-
+  @media (min-width: 768px) {
+    display: flex;
+    margin-bottom: 32px;
   }
 
-  .name-devices__container {
-    position: relative;
-
-    height: 100%;
+  @media (min-width: 1440px) {
+    margin-bottom: 50px;
   }
+}
 
-  .name-devices__link {
-    position: absolute;
+.devices-wrapper {
+  display: grid;
+  overflow: hidden;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 24px 16px;
+  width: 100%;
 
-    bottom: 0;
-    right: 0;
+  grid-template-columns: repeat(3, 224px);
+
+  @media (min-width: 1120px) {
+    grid-template-columns: repeat(4, 224px);
   }
-  
-  .devices-button {
-    width: fit-content;
-    color: #1B1C21;
-    font-family: TTLakes-Medium;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    // @extend %button;
-    border: none;
-    background: none;
-  }
+}
 
+.devices-slide {
+  width: 224px;
+  height: 160px;
+
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+
+  background: #fff;
+
+  padding: 16px;
+}
+
+.name-devices__container {
+  position: relative;
+
+  height: 100%;
+}
+
+.name-devices__link {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+}
+
+.devices-button {
+  width: fit-content;
+  color: #1b1c21;
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  // @extend %button;
+  border: none;
+  background: none;
+}
