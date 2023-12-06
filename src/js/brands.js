@@ -13,7 +13,7 @@ function getLength () {
 	if (window.outerWidth >= 1120 ) {
 		return 8;
 	}
-	
+	return 0;
 }
 
 const appender = (brand) => {
@@ -83,6 +83,8 @@ brandsButton.addEventListener("click", (e) => {
 window.addEventListener("resize", test);
 
 let mockBrandsClone = [...mockBrands];
+
+
 
 mockBrandsClone.length = getLength();
 

@@ -8,7 +8,6 @@ export const mockBrands = [
 	"acer",
 	"sony",
 	"panasonic",
-	"msi",
 	"asus",
 	"dell",
 ];
